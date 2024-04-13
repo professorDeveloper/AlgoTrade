@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screen.LoginScreen">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/loginImg"
+            android:layout_width="260dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_login_img" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Kirish"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@+id/loginImg"
+            app:layout_constraintTop_toBottomOf="@+id/loginImg" />
+
+
+        <EditText
+            android:id="@+id/loginTxt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/register_edit_bg"
+            android:drawableStart="@drawable/login"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="start|center_vertical"
+            android:hint="login"
+            android:inputType="textPersonName"
+
+            android:paddingStart="14dp"
+
+            android:textAllCaps="true"
+            android:textColorHint="#4B4B4B"
+            android:textSize="12sp"
+
+            app:layout_constraintEnd_toEndOf="@+id/loginImg"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <EditText
+            android:id="@+id/passwordTxt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/register_edit_bg"
+            android:drawableStart="@drawable/password_ic"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="start|center_vertical"
+            android:hint="parol"
+            android:inputType="textPersonName"
+
+            android:paddingStart="14dp"
+
+            android:textAllCaps="true"
+            android:textColorHint="#4B4B4B"
+            android:textSize="12sp"
+
+            app:layout_constraintEnd_toEndOf="@+id/loginImg"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/loginTxt" />
+
+
+        <TextView
+            android:id="@+id/forgotPasswordTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:fontFamily="@font/montserrat_medium"
+            android:includeFontPadding="false"
+            android:text="Parolni unutdingizmi?"
+            android:textColor="@color/basic_color"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/passwordTxt"
+            app:layout_constraintTop_toBottomOf="@+id/passwordTxt" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18sp"
+            android:gravity="start"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/forgotPasswordTxt">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:checked="true"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                app:buttonTint="#4B4B4B" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Barcha shartlarga roziman"
+                android:textColor="#4B4B4B"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/materialButton"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:text="Kirish"
+            android:textSize="18sp"
+
+            app:cornerRadius="8dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="@+id/loginTxt"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/materialButton"
+            app:layout_constraintStart_toStartOf="@+id/forgotPasswordTxt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Hali beri akauntingiz yo’qmi"
+                android:textColor="@color/grey_20"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/registerOpenTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Ro`yhatdan O`ting"
+                android:textColor="@color/basic_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="250dp"
+        android:layout_height="290dp"
+
+        android:layout_marginTop="-90dp"
+
+        app:srcCompat="@drawable/ic_islamic" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="250dp"
+        android:layout_height="290dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="-60dp"
+        android:rotation="180"
+
+        app:srcCompat="@drawable/ic_islamic" />
+
+</FrameLayout>

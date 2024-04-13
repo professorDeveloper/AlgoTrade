@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TradingApp" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/basic_color</item>
+        <item name="colorAccent">@color/basic_color_500</item>
+        <item name="colorSurface">@color/nav_bg</item>
+        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="colorPrimaryVariant">@color/bg_white</item>
+        <item name="colorOnBackground">@color/bg</item>
+        <item name="colorControlNormal">@color/nav_bg</item>
+        <!--        <item name="themePrimaryBorderButton">@style/ButtonPrimaryBorder</item>-->
+        <!--        <item name="themeNegativeBorderButton">@style/ButtonNegativeBorder</item>-->
+        <item name="colorOnPrimary">@color/bg_white</item>
+        <item name="colorSecondary">@color/basic_color</item>
+        <item name="colorSecondaryVariant">@color/violet_700</item>
+        <item name="colorOnContainer">@color/bg_filter_dialog</item>
+        <item name="colorSecondaryContainer">@color/basic_color</item>
+        <item name="colorOnSurface">@color/detail_Bg</item>
+        <item name="colorOnSecondaryContainer">?attr/colorOnSecondary</item>
+        <item name="colorOnSurfaceVariant">@color/nav_tab</item>
+        <item name="windowActionBar">false</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/status</item>
+        <item name="android:navigationBarColor">@color/status</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="titleTextColor">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearanceOverlay.Demo</item>
+        <item name="snackbarStyle">@style/MySnackbar</item>
+        <item name="snackbarButtonStyle">
+        @style/Widget.MaterialComponents.Button.TextButton.Snackbar
+        </item>
+    </style>
+    <style name="MyBottomNavigationView.TextAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

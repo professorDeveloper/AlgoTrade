@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/loginScreen">
+
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.azamovhudstc.tradingapp.ui.screen.LoginScreen"
+        android:label="login_screen"
+        tools:layout="@layout/login_screen" />
+    <fragment
+        android:id="@+id/registerScreen"
+        android:name="com.azamovhudstc.tradingapp.ui.screen.RegisterScreen"
+        android:label="RegisterScreen" />
+</navigation>

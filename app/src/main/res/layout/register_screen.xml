@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/loginImg"
+            android:layout_width="220dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/register" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Ro’yhatdan o’tish"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@+id/loginImg"
+            app:layout_constraintTop_toBottomOf="@+id/loginImg" />
+
+        <EditText
+            android:id="@+id/nameTxt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/register_edit_bg"
+            android:drawableStart="@drawable/ic_username"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="start|center_vertical"
+            android:hint="ismingiz"
+            android:inputType="textPersonName"
+
+            android:paddingStart="14dp"
+
+            android:textAllCaps="true"
+            android:textColorHint="#4B4B4B"
+            android:textSize="12sp"
+
+            app:layout_constraintEnd_toEndOf="@+id/loginImg"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/lastNameTxt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/register_edit_bg"
+            android:drawableStart="@drawable/ic_username"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="start|center_vertical"
+            android:hint="familayngiz"
+            android:inputType="textPersonName"
+
+            android:paddingStart="14dp"
+
+            android:textAllCaps="true"
+            android:textColorHint="#4B4B4B"
+            android:textSize="12sp"
+
+            app:layout_constraintEnd_toEndOf="@+id/loginImg"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/nameTxt" />
+
+
+        <EditText
+            android:id="@+id/passwordTxt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/register_edit_bg"
+            android:drawableStart="@drawable/password_ic"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="start|center_vertical"
+            android:hint="parol"
+            android:inputType="textPersonName"
+
+            android:paddingStart="14dp"
+
+            android:textAllCaps="true"
+            android:textColorHint="#4B4B4B"
+            android:textSize="12sp"
+
+            app:layout_constraintEnd_toEndOf="@+id/loginImg"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/lastNameTxt" />
+
+
+        <EditText
+            android:id="@+id/rePasswordTxt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/register_edit_bg"
+            android:drawableStart="@drawable/password_ic"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="start|center_vertical"
+            android:hint="takrorlang"
+            android:inputType="textPersonName"
+
+            android:paddingStart="14dp"
+
+            android:textAllCaps="true"
+            android:textColorHint="#4B4B4B"
+            android:textSize="12sp"
+
+            app:layout_constraintEnd_toEndOf="@+id/loginImg"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/passwordTxt" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="start|center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/rePasswordTxt"
+            app:layout_constraintStart_toStartOf="@id/rePasswordTxt"
+            app:layout_constraintTop_toBottomOf="@id/rePasswordTxt">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="1dp"
+                app:cardBackgroundColor="@color/grey_20"
+                app:cardCornerRadius="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="yoki"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="94dp"
+                android:layout_height="1dp"
+                app:cardBackgroundColor="@color/grey_20"
+                app:cardCornerRadius="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/rePasswordTxt"
+            app:layout_constraintStart_toStartOf="@+id/rePasswordTxt"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+
+                app:cardBackgroundColor="@color/basic_color_400"
+                app:cardCornerRadius="500dp"
+                app:cardElevation="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="18dp"
+
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/google" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:cardBackgroundColor="@color/basic_color_400"
+                app:cardCornerRadius="500dp"
+                app:cardElevation="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/facebook" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                app:cardBackgroundColor="@color/basic_color_400"
+                app:cardCornerRadius="500dp"
+                app:cardElevation="0dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="18dp"
+
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/twitter" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/materialButton"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:text="Yakunlash"
+            android:textSize="18sp"
+
+            app:cornerRadius="8dp"
+
+            app:layout_constraintEnd_toEndOf="@+id/loginImg"
+            app:layout_constraintStart_toStartOf="@+id/loginImg"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="250dp"
+        android:layout_height="290dp"
+
+        android:layout_marginTop="-90dp"
+
+        app:srcCompat="@drawable/ic_islamic" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="250dp"
+        android:layout_height="290dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="-80dp"
+        android:rotation="180"
+
+        app:srcCompat="@drawable/ic_islamic" />
+
+</FrameLayout>
