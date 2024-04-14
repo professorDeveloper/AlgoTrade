@@ -10,9 +10,13 @@
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/ic_islamic.xml" value="0.2775" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/ic_usd.xml" value="0.2775" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/activity_main.xml" value="0.321875" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/home_screen.xml" value="0.2988679352838745" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/item_home_type.xml" value="0.24140625" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/login_screen.xml" value="0.2988679352838745" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/main_screen.xml" value="0.4528302049755674" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/market_item.xml" value="0.2988679352838745" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/register_screen.xml" value="0.2988679352838745" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/trend_item.xml" value="0.4528302049755674" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/menu/bottom_navbar_menu.xml" value="0.32083333333333336" />
       </map>
     </option>

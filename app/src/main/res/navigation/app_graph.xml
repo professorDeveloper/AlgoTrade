@@ -9,9 +9,54 @@
         android:id="@+id/loginScreen"
         android:name="com.azamovhudstc.tradingapp.ui.screen.LoginScreen"
         android:label="login_screen"
-        tools:layout="@layout/login_screen" />
+        tools:layout="@layout/login_screen" >
+        <action
+            android:id="@+id/action_loginScreen_to_registerScreen"
+            app:destination="@id/registerScreen" />
+        <action
+            android:id="@+id/action_loginScreen_to_mainScreen"
+            app:destination="@id/mainScreen" />
+    </fragment>
     <fragment
         android:id="@+id/registerScreen"
         android:name="com.azamovhudstc.tradingapp.ui.screen.RegisterScreen"
         android:label="RegisterScreen" />
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.azamovhudstc.tradingapp.ui.screen.main.MainScreen"
+        android:label="main_screen"
+        tools:layout="@layout/main_screen" >
+        <action
+            android:id="@+id/action_mainScreen_to_coinScreen"
+            app:destination="@id/coinScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_homeScreen2"
+            app:destination="@id/homeScreen2" />
+        <action
+            android:id="@+id/action_mainScreen_to_profileScreen"
+            app:destination="@id/profileScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_walletScreen"
+            app:destination="@id/walletScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/coinScreen"
+        android:name="com.azamovhudstc.tradingapp.ui.screen.coin.CoinScreen"
+        android:label="coin_screen"
+        tools:layout="@layout/coin_screen" />
+    <fragment
+        android:id="@+id/homeScreen2"
+        android:name="com.azamovhudstc.tradingapp.ui.screen.home.HomeScreen"
+        android:label="home_screen"
+        tools:layout="@layout/home_screen" />
+    <fragment
+        android:id="@+id/profileScreen"
+        android:name="com.azamovhudstc.tradingapp.ui.screen.profile.ProfileScreen"
+        android:label="profile_screen"
+        tools:layout="@layout/profile_screen" />
+    <fragment
+        android:id="@+id/walletScreen"
+        android:name="com.azamovhudstc.tradingapp.ui.screen.wallet.WalletScreen"
+        android:label="wallet_screen"
+        tools:layout="@layout/wallet_screen" />
 </navigation>

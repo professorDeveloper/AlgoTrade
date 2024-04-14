@@ -55,6 +55,7 @@
     <color name="basic_color">#0070F0</color>
     <color name="basic_color_400">#EDF9FF</color>
     <color name="basic_color_500">#0070F0</color>
+    <color name="basic_color_800">#00408A</color>
     <color name="buttonColor">#0070F0</color>
     <color name="background">#010101</color>
     <color name="dark_grey">#181818</color>
