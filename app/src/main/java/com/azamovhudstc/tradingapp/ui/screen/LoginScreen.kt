@@ -22,7 +22,7 @@ class LoginScreen : BaseFragment<LoginScreenBinding>(LoginScreenBinding::inflate
             binding.materialButton.animation= setSlideUp()
             binding.linearLayout2.animation= setSlideUp()
             binding.materialButton.setOnClickListener {
-                findNavController().navigate(R.id.walletScreen,null, animationTransaction().build())
+                findNavController().navigate(R.id.mainScreen,null, animationTransaction().build())
             }
             binding.registerOpenTxt.setOnClickListener {
                 findNavController().navigate(

@@ -3,39 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="10dp"
-    android:layout_marginVertical="10dp"
+    android:layout_marginVertical="5dp"
     android:gravity="center"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:id="@+id/clickItem"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_gravity="center"
+        android:background="?selectableItemBackgroundBorderless"
         android:gravity="center"
         android:orientation="vertical"
         app:cardBackgroundColor="@color/basic_color_400"
         app:cardCornerRadius="500dp">
 
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/diveIcon"
             android:layout_width="18dp"
             android:layout_height="18dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/ic_usd" />
+            app:srcCompat="@drawable/document" />
 
 
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/diveTitle"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="6dp"
         android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
         android:includeFontPadding="false"
         android:text="Invest"
         android:textColor="@color/grey_20"
         android:textFontWeight="550"
-        android:textSize="12sp"/>
+        android:textSize="12sp" />
 
 
 </LinearLayout>
