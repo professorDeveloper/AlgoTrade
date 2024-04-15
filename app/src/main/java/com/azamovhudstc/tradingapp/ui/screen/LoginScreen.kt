@@ -13,14 +13,22 @@ class LoginScreen : BaseFragment<LoginScreenBinding>(LoginScreenBinding::inflate
     override fun onViewCreate() {
         binding.apply {
 
-            binding.loginImg.slideUp(1000,1)
-            binding.textView.slideUp(1000,1)
-            binding.loginTxt.slideStart(1000,1)
-            binding.passwordTxt.slideStart(1000,1)
-            binding.forgotPasswordTxt.slideStart(1000,1)
+            binding.loginImg.slideUp(1000, 1)
+            binding.textView.slideUp(1000, 1)
+            binding.loginTxt.slideStart(1000, 1)
+            binding.passwordTxt.slideStart(1000, 1)
+            binding.forgotPasswordTxt.slideStart(1000, 1)
             binding.linearLayout.animation = setSlideUp()
-            binding.materialButton.animation= setSlideUp()
-            binding.linearLayout2.animation= setSlideUp()
+            binding.materialButton.animation = setSlideUp()
+            binding.linearLayout2.animation = setSlideUp()
+
+            binding.materialButton.setOnClickListener {
+                findNavController().navigate(
+                    R.id.mainScreen,
+                    null,
+                    animationTransactionClearStack(R.id.loginScreen).build()
+                )
+            }
 
             binding.registerOpenTxt.setOnClickListener {
                 findNavController().navigate(

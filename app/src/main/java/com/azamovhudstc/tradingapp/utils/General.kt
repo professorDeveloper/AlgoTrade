@@ -31,6 +31,7 @@ import android.view.animation.ScaleAnimation
 import android.widget.ArrayAdapter
 import android.widget.FrameLayout
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.core.math.MathUtils
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -74,11 +75,11 @@ val defaultHeaders = mapOf(
 )
 
 suspend fun View.pop() {
-        ObjectAnimator.ofFloat(this@pop, "scaleX", 1f, 1.25f).setDuration(120).start()
-        ObjectAnimator.ofFloat(this@pop, "scaleY", 1f, 1.25f).setDuration(120).start()
+    ObjectAnimator.ofFloat(this@pop, "scaleX", 1f, 1.25f).setDuration(120).start()
+    ObjectAnimator.ofFloat(this@pop, "scaleY", 1f, 1.25f).setDuration(120).start()
     delay(120)
-        ObjectAnimator.ofFloat(this@pop, "scaleX", 1.25f, 1f).setDuration(100).start()
-        ObjectAnimator.ofFloat(this@pop, "scaleY", 1.25f, 1f).setDuration(100).start()
+    ObjectAnimator.ofFloat(this@pop, "scaleX", 1.25f, 1f).setDuration(100).start()
+    ObjectAnimator.ofFloat(this@pop, "scaleY", 1.25f, 1f).setDuration(100).start()
     delay(100)
 }
 
@@ -371,6 +372,11 @@ fun getCurrentBrightnessValue(context: Context): Float {
     }
 
     return brightnessConverter(getCur() / getMax(), true)
+}
+
+
+fun CardView.setStringColor(color: String) {
+    this.setCardBackgroundColor(Color.parseColor(color))
 }
 
 fun animationTransactionClearStack(clearFragmentID: Int): NavOptions.Builder {
