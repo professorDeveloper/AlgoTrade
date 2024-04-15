@@ -1,6 +1,7 @@
 package com.azamovhudstc.tradingapp.local
 
 import com.azamovhudstc.tradingapp.R
+import com.azamovhudstc.tradingapp.data.DepositeItem
 import com.azamovhudstc.tradingapp.data.DiveItem
 import com.azamovhudstc.tradingapp.data.TrendItem
 
@@ -26,6 +27,11 @@ object LocalHome {
         list.add(TrendItem(R.drawable.tesla, "Tesla", "\$ 341.65", "+6.6 %", "#E82126"))
         list.add(TrendItem(R.drawable.nvidia, "Nvidia", "\$ 591.67", "+9.4 %", "#94C11E"))
         list.add(TrendItem(R.drawable.meta, "Meta", "$ 421.89", "+6.3 %", "#FEC107"))
+        return list
+    }
+    fun loadDeposite(): ArrayList<DepositeItem> {
+        val list = ArrayList<DepositeItem>()
+        list.add(DepositeItem("SA;p,",""))
         return list
     }
 }

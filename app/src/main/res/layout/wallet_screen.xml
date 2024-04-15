@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:background="#FFFFFF"
         android:orientation="vertical"
-
+        android:id="@+id/walletappbar"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:elevation="0dp"
         android:layout_height="wrap_content">
@@ -45,7 +45,7 @@
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
                         android:layout_height="210dp"
-
+                        android:id="@+id/cardBalance"
                         android:layout_marginHorizontal="18dp"
                         android:layout_marginTop="50dp"
                         app:cardBackgroundColor="#EDF9FF"
@@ -102,6 +102,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginHorizontal="15dp"
                                     android:orientation="vertical"
+                                    android:id="@+id/sendlayout"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@+id/textView3">
 
@@ -132,7 +133,7 @@
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
-
+                                    android:id="@+id/buylayout"
                                     android:layout_height="wrap_content"
                                     android:layout_marginHorizontal="15dp"
                                     android:gravity="center"
@@ -170,7 +171,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginHorizontal="15dp"
-
+                                    android:id="@+id/recievelayout"
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -205,6 +206,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginHorizontal="15dp"
+                                    android:id="@+id/swaplayout"
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -273,33 +275,17 @@
         </com.google.android.material.appbar.MaterialToolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
-    <FrameLayout
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
         android:layout_width="match_parent"
-
-        android:layout_height="match_parent">
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="250dp"
-            android:layout_height="290dp"
-            android:layout_gravity="bottom|end"
-            android:layout_marginEnd="-10dp"
-            android:layout_marginBottom="-80dp"
-            android:rotation="180"
-
-            app:srcCompat="@drawable/ic_islamic" />
-
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycleview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:overScrollMode="never"
-            tools:itemCount="10"
-            tools:listitem="@layout/deposite_item"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-    </FrameLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:overScrollMode="never"
+        tools:itemCount="10"
+        tools:listitem="@layout/deposite_item"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
