@@ -11,7 +11,6 @@ import com.azamovhudstc.tradingapp.databinding.WalletScreenBinding
 
 class WalletScreen : BaseFragment<WalletScreenBinding>(WalletScreenBinding::inflate) {
     override fun onViewCreate() {
-        TODO("Not yet implemented")
 
     }
 

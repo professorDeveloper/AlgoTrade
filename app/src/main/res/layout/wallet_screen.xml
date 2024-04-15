@@ -1,14 +1,305 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FFFFFF"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.screen.wallet.WalletScreen">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="#FFFFFF"
+        android:orientation="vertical"
 
-</FrameLayout>
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="0dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            android:layout_marginVertical="10dp"
+            app:elevation="0dp"
+            app:layout_scrollEffect="compress"
+            app:layout_scrollFlags="scroll|snap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="250dp"
+                    android:layout_height="290dp"
+
+                    android:layout_marginTop="-90dp"
+
+                    app:srcCompat="@drawable/ic_islamic" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+
+                        android:layout_marginHorizontal="18dp"
+                        android:layout_marginTop="50dp"
+                        app:cardBackgroundColor="#EDF9FF"
+                        app:cardCornerRadius="13dp"
+                        app:cardElevation="0.3dp"
+                        android:layout_marginBottom="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:strokeWidth="0dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:text="Sizning hisobingiz"
+                                android:textColor="#4B4B4B"
+                                android:textSize="13sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:text="5 678 456"
+                                android:textColor="#00408A"
+                                android:textSize="23sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+
+                                android:orientation="horizontal"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="15dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/bgicons"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/sendicon" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="6dp"
+                                        android:fontFamily="@font/montserrat_semi_bold"
+                                        android:text="Send"
+                                        android:textColor="#4B4B4B"
+                                        android:textFontWeight="600"
+                                        android:textSize="13sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+
+                                        android:background="@drawable/bgicons"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/recieveicon" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="6dp"
+                                        android:fontFamily="@font/montserrat_semi_bold"
+                                        android:text="Receive"
+                                        android:textColor="#626A66"
+                                        android:textFontWeight="600"
+                                        android:textSize="13sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="15dp"
+
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/bgicons"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/buyicon" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="6dp"
+                                        android:fontFamily="@font/montserrat_semi_bold"
+                                        android:text="Buy"
+                                        android:textColor="#626A66"
+                                        android:textFontWeight="600"
+                                        android:textSize="13sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/bgicons"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/swapicon" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="6dp"
+                                        android:fontFamily="@font/montserrat_semi_bold"
+                                        android:text="Swap"
+                                        android:textColor="#626A66"
+                                        android:textFontWeight="600"
+                                        android:textSize="13sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            app:elevation="0dp"
+            android:layout_marginVertical="15dp"
+            android:gravity="center"
+            android:layout_height="?actionBarSize">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deposite"
+                    android:textColor="#0070F0"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/montserrat_medium"/>
+                <TextView
+                    android:layout_marginStart="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Withdraw"
+                    android:textColor="#4B4B4B"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/montserrat_medium"/>
+            </LinearLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="250dp"
+            android:layout_height="290dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="-10dp"
+            android:layout_marginBottom="-80dp"
+            android:rotation="180"
+
+            app:srcCompat="@drawable/ic_islamic" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:overScrollMode="never"
+            tools:itemCount="10"
+            tools:listitem="@layout/deposite_item"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

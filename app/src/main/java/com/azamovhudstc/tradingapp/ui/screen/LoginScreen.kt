@@ -21,7 +21,9 @@ class LoginScreen : BaseFragment<LoginScreenBinding>(LoginScreenBinding::inflate
             binding.linearLayout.animation = setSlideUp()
             binding.materialButton.animation= setSlideUp()
             binding.linearLayout2.animation= setSlideUp()
-
+            binding.materialButton.setOnClickListener {
+                findNavController().navigate(R.id.walletScreen,null, animationTransaction().build())
+            }
             binding.registerOpenTxt.setOnClickListener {
                 findNavController().navigate(
                     R.id.registerScreen, null,
