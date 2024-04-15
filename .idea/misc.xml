@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable-v24/bg_rounded.xml" value="0.2015" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable-v24/item_bg.xml" value="0.2015" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable-v24/item_navbar_bg.xml" value="0.2775" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable-v24/linear_gradient_bg.xml" value="0.2775" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable-v24/profile_selected.xml" value="0.1245" />
