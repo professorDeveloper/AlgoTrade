@@ -182,7 +182,14 @@ object LocalHome {
     }
     fun loadDeposite(): ArrayList<DepositeItem> {
         val list = ArrayList<DepositeItem>()
-        list.add(DepositeItem("SA;p,",""))
+        list.add(DepositeItem("22.01.2024 / 14:30,","3245 \$"))
+        list.add(DepositeItem("12.03.2024 / 15:41","545 \$"))
+        list.add(DepositeItem("12.01.2024 / 14:38","265 \$"))
+        list.add(DepositeItem("12.01.2024 / 14:38","265 \$"))
+        list.add(DepositeItem("10.01.2024 / 14:14","251 \$"))
+        list.add(DepositeItem("10.01.2024 / 14:14","251 \$"))
+        list.add(DepositeItem("12.01.2024 / 14:38","265 \$"))
+        list.add(DepositeItem("12.01.2024 / 14:38","265 \$"))
         return list
     }
 }

@@ -40,7 +40,7 @@
         android:text="Invest"
         android:textColor="@color/grey_20"
         android:textFontWeight="550"
-        android:textSize="12sp" />
+        android:textSize="14sp" />
 
 
 </LinearLayout>

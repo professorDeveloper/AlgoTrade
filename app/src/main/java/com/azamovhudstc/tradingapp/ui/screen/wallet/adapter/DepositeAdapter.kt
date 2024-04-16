@@ -19,7 +19,8 @@ class DepositeAdapter : RecyclerView.Adapter<DepositeAdapter.TrendVh>() {
 
         fun onBind(data: DepositeItem) {
             binding.apply {
-
+                binding.totalPrice.text=data.price
+                binding.date.text=data.date
                 setAnimation(binding.root.context, binding.root)
             }
 

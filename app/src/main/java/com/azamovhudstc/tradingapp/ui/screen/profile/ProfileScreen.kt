@@ -11,7 +11,6 @@ import com.azamovhudstc.tradingapp.databinding.ProfileScreenBinding
 
 class ProfileScreen : BaseFragment<ProfileScreenBinding>(ProfileScreenBinding::inflate) {
     override fun onViewCreate() {
-        TODO("Not yet implemented")
     }
 
 }

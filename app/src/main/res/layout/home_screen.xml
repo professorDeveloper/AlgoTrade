@@ -66,7 +66,7 @@
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/montserrat_medium"
                             android:text="Salom 👋"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             app:layout_constraintStart_toEndOf="@+id/profilePic"
                             app:layout_constraintTop_toTopOf="@+id/profilePic" />
 
@@ -135,7 +135,7 @@
                                     android:fontFamily="@font/montserrat_medium"
                                     android:text="Hozirgi Hisobingiz:"
                                     android:textFontWeight="400"
-                                    android:textSize="12sp"
+                                    android:textSize="14sp"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -175,7 +175,7 @@
                                         android:text="+ 4.56 %"
                                         android:textColor="@color/white"
                                         android:textFontWeight="400"
-                                        android:textSize="12sp" />
+                                        android:textSize="14sp" />
 
                                 </androidx.cardview.widget.CardView>
 
