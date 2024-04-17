@@ -91,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="30dp"
                 android:fontFamily="@font/inter_bold"
+
                 android:text=" $ 0.00023328850"
                 android:textSize="22sp"
                 app:layout_constraintBottom_toTopOf="@+id/recyclerView"

@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#FFFFFF"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="#FFFFFF">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/walletappbar"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:orientation="vertical"
-        android:id="@+id/walletappbar"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:elevation="0dp"
-        android:layout_height="wrap_content">
+        app:elevation="0dp">
+
         <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
             app:contentInsetEnd="0dp"
             app:contentInsetLeft="0dp"
             app:contentInsetRight="0dp"
             app:contentInsetStart="0dp"
-            android:layout_marginVertical="10dp"
             app:elevation="0dp"
             app:layout_scrollEffect="compress"
-            app:layout_scrollFlags="scroll|snap"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            app:layout_scrollFlags="scroll|snap">
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <com.google.android.material.imageview.ShapeableImageView
                     android:layout_width="250dp"
                     android:layout_height="290dp"
@@ -42,15 +44,15 @@
                     android:layout_height="match_parent">
 
                     <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardBalance"
                         android:layout_width="match_parent"
                         android:layout_height="220dp"
-                        android:id="@+id/cardBalance"
                         android:layout_marginHorizontal="18dp"
                         android:layout_marginTop="50dp"
+                        android:layout_marginBottom="15dp"
                         app:cardBackgroundColor="#EDF9FF"
                         app:cardCornerRadius="13dp"
                         app:cardElevation="0.3dp"
-                        android:layout_marginBottom="15dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -99,52 +101,357 @@
 
                                 <com.google.android.material.card.MaterialCardView
                                     android:layout_width="100dp"
+                                    android:layout_height="100dp"
                                     android:layout_marginHorizontal="10dp"
-                                    app:strokeWidth="0dp"
                                     app:cardCornerRadius="12dp"
-                                    android:layout_height="100dp">
+                                    app:strokeWidth="0dp">
+
                                     <androidx.constraintlayout.widget.ConstraintLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent">
-                                        <com.tradingview.lightweightcharts.view.ChartsView
-                                            android:layout_width="0dp"
-                                            android:id="@+id/charts_view"
-                                            app:layout_constraintEnd_toEndOf="parent"
+
+                                        <TextView
+                                            android:id="@+id/kunlik"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:text="Kunlik"
+                                            android:textColor="@color/grey_60"
+                                            android:textFontWeight="600"
+                                            android:textSize="12sp"
                                             app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <com.google.android.material.imageview.ShapeableImageView
+                                            android:id="@+id/trading1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            app:layout_constraintStart_toStartOf="@+id/kunlik"
+                                            app:layout_constraintTop_toBottomOf="@+id/kunlik"
+                                            app:srcCompat="@drawable/trading1" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:text="+ 1.45%"
+                                            android:textColor="@color/greenBasic"
+                                            android:textSize="12sp"
                                             app:layout_constraintBottom_toBottomOf="parent"
-                                            app:layout_constraintTop_toTopOf="parent"
-                                            android:layout_height="0dp"/>
+                                            app:layout_constraintStart_toStartOf="@+id/kunlik"
+                                            app:layout_constraintTop_toBottomOf="@+id/trading1" />
 
                                     </androidx.constraintlayout.widget.ConstraintLayout>
                                 </com.google.android.material.card.MaterialCardView>
-                                <com.google.android.material.card.MaterialCardView
-                                    android:layout_marginHorizontal="10dp"
-                                    app:strokeWidth="0dp"
-                                    app:cardCornerRadius="12dp"
 
+                                <com.google.android.material.card.MaterialCardView
                                     android:layout_width="100dp"
-                                    android:layout_height="100dp">
+                                    android:layout_height="100dp"
+                                    android:layout_marginHorizontal="10dp"
+
+                                    app:cardCornerRadius="12dp"
+                                    app:strokeWidth="0dp">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/foyda"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:text="Foyda"
+                                            android:textColor="@color/grey_60"
+                                            android:textFontWeight="600"
+                                            android:textSize="12sp"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <com.google.android.material.imageview.ShapeableImageView
+                                            android:id="@+id/trading2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            app:layout_constraintStart_toStartOf="@+id/foyda"
+                                            app:layout_constraintTop_toBottomOf="@+id/foyda"
+                                            app:srcCompat="@drawable/trading2" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:text="$ 566.89"
+                                            android:textColor="@color/greenBasic"
+                                            android:textSize="12sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintStart_toStartOf="@+id/foyda"
+                                            app:layout_constraintTop_toBottomOf="@+id/trading2" />
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
                                 </com.google.android.material.card.MaterialCardView>
-                                <com.google.android.material.card.MaterialCardView
-                                    android:layout_marginHorizontal="10dp"
-                                    app:strokeWidth="0dp"
-                                    app:cardCornerRadius="12dp"
 
+                                <com.google.android.material.card.MaterialCardView
                                     android:layout_width="100dp"
-                                    android:layout_height="100dp">
+                                    android:layout_height="100dp"
+                                    android:layout_marginHorizontal="10dp"
+
+                                    app:cardCornerRadius="12dp"
+                                    app:strokeWidth="0dp">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/jamoa"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:text="Jamoa"
+                                            android:textColor="@color/grey_60"
+                                            android:textFontWeight="600"
+                                            android:textSize="12sp"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <com.google.android.material.imageview.ShapeableImageView
+                                            android:id="@+id/trading3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            app:layout_constraintStart_toStartOf="@+id/jamoa"
+                                            app:layout_constraintTop_toBottomOf="@+id/jamoa"
+                                            app:srcCompat="@drawable/trading3" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:text="+ 12 kishi"
+                                            android:textColor="@color/greenBasic"
+                                            android:textSize="12sp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintStart_toStartOf="@+id/jamoa"
+                                            app:layout_constraintTop_toBottomOf="@+id/trading3" />
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                                 </com.google.android.material.card.MaterialCardView>
                             </LinearLayout>
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </com.google.android.material.card.MaterialCardView>
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
             </FrameLayout>
         </androidx.appcompat.widget.Toolbar>
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageView"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/profile_pic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Asad G’aybullaev"
+
+                    android:textColor="@color/darkest_Black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/circleImageView"
+                    app:layout_constraintTop_toTopOf="@+id/circleImageView" />
+
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="asadbek2007@gmail.com"
+                    android:textColor="@color/dark_200"
+                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/shapeableImageView3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/circleImageView"
+                    app:srcCompat="@drawable/ic_next" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="4dp"
+                    app:cardBackgroundColor="@color/basic_color_400"
+                    app:cardCornerRadius="8dp"
+
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/shapeableImageView3"
+                    app:layout_constraintStart_toStartOf="@+id/circleImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/circleImageView">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:layout_marginVertical="8dp"
+                            android:layout_marginStart="20dp"
+                            app:cardBackgroundColor="#FFFFFF"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="8dp"
+                                    app:srcCompat="@drawable/share" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="8dp"
+                                    android:text="Ulashish"
+                                    android:textColor="@color/dark_200" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:layout_marginVertical="8dp"
+                            android:layout_marginStart="20dp"
+                            app:cardBackgroundColor="@color/basic_color_400"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/cardView2"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="8dp"
+                                    app:srcCompat="@drawable/add_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="8dp"
+                                    android:text="Do`stlar"
+                                    android:textColor="@color/dark_200" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:layout_marginVertical="8dp"
+                            android:layout_marginStart="20dp"
+                            app:cardBackgroundColor="@color/basic_color_400"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/cardView3"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="8dp"
+                                    app:srcCompat="@drawable/about" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="8dp"
+                                    android:text="Yordam"
+                                    android:textColor="@color/dark_200" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
     </com.google.android.material.appbar.AppBarLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profileRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/profile_item" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

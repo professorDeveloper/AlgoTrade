@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
@@ -23,6 +24,7 @@
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/login_screen.xml" value="0.2988679352838745" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/main_screen.xml" value="0.4528302049755674" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/market_item.xml" value="0.2988679352838745" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/profile_item.xml" value="0.240625" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/profile_screen.xml" value="0.24140625" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/register_screen.xml" value="0.2988679352838745" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/trend_item.xml" value="0.4528302049755674" />
@@ -31,7 +33,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

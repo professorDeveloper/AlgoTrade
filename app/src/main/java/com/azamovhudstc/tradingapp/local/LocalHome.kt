@@ -199,4 +199,16 @@ object LocalHome {
         list.add(CoinItem("Each season", "0.000012350 \$"))
         return list
     }
+
+    fun loadProfileList(): ArrayList<ProfileItem> {
+        val list = ArrayList<ProfileItem>()
+        list.add(ProfileItem(R.drawable.tick, "Tekshirish"))
+        list.add(ProfileItem(R.drawable.money, "Pul o’tkazish manzili"))
+        list.add(ProfileItem(R.drawable.add_user, "Bog’lanish"))
+        list.add(ProfileItem(R.drawable.money, "Pul o’tkazish manzili"))
+        list.add(ProfileItem(R.drawable.tick, "Tekshirish"))
+        list.add(ProfileItem(R.drawable.money, "Pul o’tkazish manzili"))
+        list.add(ProfileItem(R.drawable.global, "Tilni tanlash"))
+        return list
+    }
 }
