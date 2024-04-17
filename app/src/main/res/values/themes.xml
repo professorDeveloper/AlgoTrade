@@ -25,7 +25,7 @@
         <item name="windowNoTitle">true</item>
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowBackground">@color/bg</item>
-        <item name="android:statusBarColor">@color/status</item>
+        <item name="android:statusBarColor">#2CEEEEEE</item>
         <item name="android:navigationBarColor">@color/status</item>
         <item name="android:fontFamily">@font/poppins</item>
         <item name="titleTextColor">@color/textColor</item>

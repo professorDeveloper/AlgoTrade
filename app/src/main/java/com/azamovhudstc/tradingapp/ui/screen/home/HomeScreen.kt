@@ -105,7 +105,7 @@ class HomeScreen : BaseFragment<HomeScreenBinding>(HomeScreenBinding::inflate),
             binding.greetingText.slideUp(1200, 0)
             binding.nameTxt.slideUp(1200, 0)
             binding.notificationCard.slideUp(700, 0)
-            binding.cardView.slideStart(700, 0)
+                binding.cardView.slideStart(700, 0)
             binding.cardView.slideUp(860, 1)
             binding.partRv.slideUp(920, 1)
             binding.partRv.layoutAnimation = LayoutAnimationController(setSlideIn(), 0.25f)

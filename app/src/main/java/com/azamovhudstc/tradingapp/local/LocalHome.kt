@@ -1,10 +1,7 @@
 package com.azamovhudstc.tradingapp.local
 
 import com.azamovhudstc.tradingapp.R
-import com.azamovhudstc.tradingapp.data.DepositeItem
-import com.azamovhudstc.tradingapp.data.DiveItem
-import com.azamovhudstc.tradingapp.data.MarketItem
-import com.azamovhudstc.tradingapp.data.TrendItem
+import com.azamovhudstc.tradingapp.data.*
 
 object LocalHome {
     fun localDriveItem(): ArrayList<DiveItem> {
@@ -180,16 +177,26 @@ object LocalHome {
         )
         return list
     }
+
     fun loadDeposite(): ArrayList<DepositeItem> {
         val list = ArrayList<DepositeItem>()
-        list.add(DepositeItem("22.01.2024 / 14:30,","3245 \$"))
-        list.add(DepositeItem("12.03.2024 / 15:41","545 \$"))
-        list.add(DepositeItem("12.01.2024 / 14:38","265 \$"))
-        list.add(DepositeItem("12.01.2024 / 14:38","265 \$"))
-        list.add(DepositeItem("10.01.2024 / 14:14","251 \$"))
-        list.add(DepositeItem("10.01.2024 / 14:14","251 \$"))
-        list.add(DepositeItem("12.01.2024 / 14:38","265 \$"))
-        list.add(DepositeItem("12.01.2024 / 14:38","265 \$"))
+        list.add(DepositeItem("22.01.2024 / 14:30,", "3245 \$"))
+        list.add(DepositeItem("12.03.2024 / 15:41", "545 \$"))
+        list.add(DepositeItem("12.01.2024 / 14:38", "265 \$"))
+        list.add(DepositeItem("12.01.2024 / 14:38", "265 \$"))
+        list.add(DepositeItem("10.01.2024 / 14:14", "251 \$"))
+        list.add(DepositeItem("10.01.2024 / 14:14", "251 \$"))
+        list.add(DepositeItem("12.01.2024 / 14:38", "265 \$"))
+        list.add(DepositeItem("12.01.2024 / 14:38", "265 \$"))
+        return list
+    }
+
+    fun localCoinData(): ArrayList<CoinItem> {
+        val list = ArrayList<CoinItem>()
+        list.add(CoinItem("Each day", "0.000012350 \$"))
+        list.add(CoinItem("Each month", "0.00332345 \$"))
+        list.add(CoinItem("Each year", "0.00332345 \$"))
+        list.add(CoinItem("Each season", "0.000012350 \$"))
         return list
     }
 }
