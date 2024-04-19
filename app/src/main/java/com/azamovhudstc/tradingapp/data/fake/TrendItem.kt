@@ -1,4 +1,4 @@
-package com.azamovhudstc.tradingapp.data
+package com.azamovhudstc.tradingapp.data.fake
 
 data class TrendItem(
     val appLogo: Int,

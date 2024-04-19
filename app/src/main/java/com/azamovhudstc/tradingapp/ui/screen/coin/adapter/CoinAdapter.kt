@@ -3,7 +3,7 @@ package com.azamovhudstc.tradingapp.ui.screen.coin.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.azamovhudstc.tradingapp.data.CoinItem
+import com.azamovhudstc.tradingapp.data.fake.CoinItem
 import com.azamovhudstc.tradingapp.databinding.CoinHorizontalItemBinding
 import com.azamovhudstc.tradingapp.utils.setAnimation
 

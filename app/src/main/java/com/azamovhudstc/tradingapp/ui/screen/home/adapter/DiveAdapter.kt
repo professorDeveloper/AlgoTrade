@@ -3,7 +3,7 @@ package com.azamovhudstc.tradingapp.ui.screen.home.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.azamovhudstc.tradingapp.data.DiveItem
+import com.azamovhudstc.tradingapp.data.fake.DiveItem
 import com.azamovhudstc.tradingapp.databinding.ItemHomeTypeBinding
 import com.azamovhudstc.tradingapp.utils.setAnimation
 import com.azamovhudstc.tradingapp.utils.setSlideIn

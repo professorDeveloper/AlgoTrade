@@ -1,4 +1,4 @@
-package com.azamovhudstc.tradingapp.data
+package com.azamovhudstc.tradingapp.data.fake
 
 data class MarketItem(
     val title: String,

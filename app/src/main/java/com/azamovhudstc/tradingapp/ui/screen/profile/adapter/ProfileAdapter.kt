@@ -3,7 +3,7 @@ package com.azamovhudstc.tradingapp.ui.screen.profile.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.azamovhudstc.tradingapp.data.ProfileItem
+import com.azamovhudstc.tradingapp.data.fake.ProfileItem
 import com.azamovhudstc.tradingapp.databinding.ProfileItemBinding
 import com.azamovhudstc.tradingapp.utils.setAnimation
 

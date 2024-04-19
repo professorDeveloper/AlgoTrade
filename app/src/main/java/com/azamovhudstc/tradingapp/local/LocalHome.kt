@@ -1,7 +1,7 @@
 package com.azamovhudstc.tradingapp.local
 
 import com.azamovhudstc.tradingapp.R
-import com.azamovhudstc.tradingapp.data.*
+import com.azamovhudstc.tradingapp.data.fake.*
 
 object LocalHome {
     fun localDriveItem(): ArrayList<DiveItem> {

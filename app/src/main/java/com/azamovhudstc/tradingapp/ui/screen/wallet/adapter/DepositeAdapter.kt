@@ -3,12 +3,9 @@ package com.azamovhudstc.tradingapp.ui.screen.wallet.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.azamovhudstc.tradingapp.data.DepositeItem
-import com.azamovhudstc.tradingapp.data.TrendItem
+import com.azamovhudstc.tradingapp.data.fake.DepositeItem
 import com.azamovhudstc.tradingapp.databinding.DepositeItemBinding
-import com.azamovhudstc.tradingapp.databinding.TrendItemBinding
 import com.azamovhudstc.tradingapp.utils.setAnimation
-import com.azamovhudstc.tradingapp.utils.setStringColor
 
 class DepositeAdapter : RecyclerView.Adapter<DepositeAdapter.TrendVh>() {
 
