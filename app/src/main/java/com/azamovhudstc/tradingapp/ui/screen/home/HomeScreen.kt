@@ -149,4 +149,8 @@ class HomeScreen : BaseFragment<HomeScreenBinding>(HomeScreenBinding::inflate),
 
     }
 
+    override fun onResume() {
+        super.onResume()
+
+    }
 }

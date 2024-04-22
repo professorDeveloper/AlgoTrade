@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#FFFFFF"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
     tools:context=".ui.screen.wallet.WalletScreen">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/walletappbar"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:orientation="vertical"
-        android:id="@+id/walletappbar"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:elevation="0dp"
-        android:layout_height="wrap_content">
+        app:elevation="0dp">
+
         <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
             app:contentInsetEnd="0dp"
             app:contentInsetLeft="0dp"
             app:contentInsetRight="0dp"
             app:contentInsetStart="0dp"
-            android:layout_marginVertical="10dp"
             app:elevation="0dp"
             app:layout_scrollEffect="compress"
-            app:layout_scrollFlags="scroll|snap"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            app:layout_scrollFlags="scroll|snap">
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <com.google.android.material.imageview.ShapeableImageView
                     android:layout_width="250dp"
                     android:layout_height="290dp"
@@ -43,15 +45,15 @@
                     android:layout_height="match_parent">
 
                     <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardBalance"
                         android:layout_width="match_parent"
                         android:layout_height="210dp"
-                        android:id="@+id/cardBalance"
                         android:layout_marginHorizontal="18dp"
                         android:layout_marginTop="50dp"
+                        android:layout_marginBottom="15dp"
                         app:cardBackgroundColor="#EDF9FF"
                         app:cardCornerRadius="13dp"
                         app:cardElevation="0.3dp"
-                        android:layout_marginBottom="15dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -98,11 +100,11 @@
                                 app:layout_constraintTop_toBottomOf="@+id/textView3">
 
                                 <LinearLayout
+                                    android:id="@+id/sendlayout"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginHorizontal="15dp"
                                     android:orientation="vertical"
-                                    android:id="@+id/sendlayout"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@+id/textView3">
 
@@ -132,8 +134,8 @@
                                 </LinearLayout>
 
                                 <LinearLayout
-                                    android:layout_width="wrap_content"
                                     android:id="@+id/buylayout"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginHorizontal="15dp"
                                     android:gravity="center"
@@ -168,10 +170,10 @@
                                 </LinearLayout>
 
                                 <LinearLayout
+                                    android:id="@+id/recievelayout"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginHorizontal="15dp"
-                                    android:id="@+id/recievelayout"
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -203,10 +205,10 @@
                                 </LinearLayout>
 
                                 <LinearLayout
+                                    android:id="@+id/swaplayout"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginHorizontal="15dp"
-                                    android:id="@+id/swaplayout"
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -244,47 +246,49 @@
 
             </FrameLayout>
         </androidx.appcompat.widget.Toolbar>
+
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
-            app:elevation="0dp"
-            android:layout_marginVertical="15dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
             android:gravity="center"
-            android:layout_height="?actionBarSize">
+            app:elevation="0dp">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:orientation="horizontal">
+
                 <TextView
+                    android:id="@+id/depositTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
                     android:text="Deposite"
                     android:textColor="#0070F0"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/montserrat_medium"/>
+                    android:textSize="15sp" />
+
                 <TextView
-                    android:layout_marginStart="15dp"
+                    android:id="@+id/withDraw"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/montserrat_medium"
                     android:text="Withdraw"
                     android:textColor="#4B4B4B"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/montserrat_medium"/>
+                    android:textSize="15sp" />
             </LinearLayout>
         </com.google.android.material.appbar.MaterialToolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleview"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/walletPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:overScrollMode="never"
-        tools:itemCount="10"
-        tools:listitem="@layout/deposite_item"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 
