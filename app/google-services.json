@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "824584517880",
+    "project_id": "tradingmobile-afc2f",
+    "storage_bucket": "tradingmobile-afc2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824584517880:android:6409cf0f1715ce94be230d",
+        "android_client_info": {
+          "package_name": "com.azamovhudstc.tradingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgaAoQ1IMhBCKpbcWY3sCRtZe5Q_HmEFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824584517880:android:c3e9079a82e00785be230d",
+        "android_client_info": {
+          "package_name": "com.azamovhudstc.tradingmobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgaAoQ1IMhBCKpbcWY3sCRtZe5Q_HmEFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

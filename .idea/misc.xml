@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable-v24/bg_connection.xml" value="0.182" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable-v24/bg_rounded.xml" value="0.2015" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable-v24/item_bg.xml" value="0.2015" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable-v24/item_navbar_bg.xml" value="0.2775" />
@@ -11,11 +12,15 @@
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable-v24/register_edit_bg.xml" value="0.2775" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/bgicons.xml" value="0.2015" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/coinbg.xml" value="0.282" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/ic_baseline_radio_button_unchecked_24.xml" value="0.182" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/ic_filled_usd.xml" value="0.2775" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/ic_islamic.xml" value="0.2775" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/ic_usd.xml" value="0.2775" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/radio_size.xml" value="0.182" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/sendicon.xml" value="0.173" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/activity_main.xml" value="0.321875" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/change_language.xml" value="0.2988679352838745" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/choose_location.xml" value="0.2988679352838745" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/coin_horizontal_item.xml" value="0.21237113402061855" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/coin_screen.xml" value="0.30185185185185187" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/deposite_item.xml" value="0.2264151024877837" />

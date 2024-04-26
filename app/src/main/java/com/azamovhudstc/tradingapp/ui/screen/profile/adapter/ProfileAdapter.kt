@@ -11,8 +11,14 @@ class ProfileAdapter : RecyclerView.Adapter<ProfileAdapter.ProfileVh>() {
 
     private val list = ArrayList<ProfileItem>()
 
+    lateinit var itemClickListenerr: (ProfileItem) -> Unit
 
-    fun submitList(newList: ArrayList<ProfileItem>){
+    fun setItemClickListener(listener: (ProfileItem) -> Unit) {
+        itemClickListenerr = listener
+    }
+
+
+    fun submitList(newList: ArrayList<ProfileItem>) {
         list.clear()
         list.addAll(newList)
         notifyDataSetChanged()
@@ -26,6 +32,9 @@ class ProfileAdapter : RecyclerView.Adapter<ProfileAdapter.ProfileVh>() {
                 setAnimation(binding.root.context, binding.root)
                 shapeableImageView4.setImageResource(data.icon)
                 textView6.text = data.itemTitle
+                binding.root.setOnClickListener {
+                    itemClickListenerr.invoke(data)
+                }
             }
         }
 

@@ -14,6 +14,17 @@ class ProfileScreen : BaseFragment<ProfileScreenBinding>(ProfileScreenBinding::i
         binding.apply {
             profileRv.adapter = profileAdapter
             profileAdapter.submitList(LocalHome.loadProfileList())
+            profileAdapter.setItemClickListener {
+                when(it.itemTitle){
+                    "Pul o’tkazish manzili" -> {
+
+                    }
+
+                    "Tilni tanlash" ->{
+
+                    }
+                }
+            }
             binding.cardView2.setOnClickListener {
                 binding.helpCard.setCardBackgroundColor(requireActivity().getColor(R.color.basic_color_400))
                 binding.cardView3.setCardBackgroundColor(requireActivity().getColor(R.color.basic_color_400))
