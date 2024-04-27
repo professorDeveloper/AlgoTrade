@@ -12,11 +12,13 @@ package com.azamovhudstc.tradingapp.utils
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import android.content.res.Resources
 import android.graphics.Color
 import android.graphics.Paint
+import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.ShapeDrawable
 import android.graphics.drawable.shapes.RoundRectShape
 import android.os.*
@@ -30,17 +32,20 @@ import android.view.animation.AnimationUtils
 import android.view.animation.ScaleAnimation
 import android.widget.ArrayAdapter
 import android.widget.FrameLayout
+import android.widget.RadioGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.math.MathUtils
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
+import androidx.fragment.app.FragmentActivity
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.navigation.NavOptions
 import androidx.viewpager2.widget.ViewPager2
 import com.azamovhudstc.tradingapp.R
 import com.azamovhudstc.tradingapp.app.App
+import com.azamovhudstc.tradingapp.databinding.ChangeLanguageBinding
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.delay
 import java.lang.reflect.Field
@@ -425,4 +430,6 @@ open class NoPaddingArrayAdapter<T>(context: Context, layoutId: Int, items: List
         return view
     }
 }
+
+
 

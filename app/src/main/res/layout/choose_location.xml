@@ -12,20 +12,76 @@
         android:layout_marginHorizontal="5dp">
 
         <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
+            android:id="@+id/info"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:ellipsize="end"
             android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
             android:fontFamily="@font/montserrat_semi_bold"
             android:text="Iltimos manzilni kirishingizda ishonch hosil qilgandan kegin saqlash tugmasini bosing"
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addLocationTxt"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:hint="manzilni kiriting"
+            app:boxStrokeColor="@color/basic_color_500"
+            app:boxStrokeWidth="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info"
+            app:startIconDrawable="@drawable/location"
+            app:startIconTint="@color/basic_color">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveBtn"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:text="saqlash"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/addLocationTxt"
+            app:layout_constraintTop_toBottomOf="@+id/addLocationTxt" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id='@+id/copyBtn'
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="121dp"
+            android:layout_height="48dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:text="nusxalash"
+            android:textColor="@color/dark_grey"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/saveBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/saveBtn"
+            app:layout_constraintTop_toTopOf="@+id/saveBtn"
+            app:strokeColor="@color/library_back_color_88" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

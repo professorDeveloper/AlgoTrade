@@ -18,6 +18,7 @@
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/ic_usd.xml" value="0.2775" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/radio_size.xml" value="0.182" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/sendicon.xml" value="0.173" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/shape_corner_16dp.xml" value="0.237" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/activity_main.xml" value="0.321875" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/change_language.xml" value="0.2988679352838745" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/choose_location.xml" value="0.2988679352838745" />
@@ -28,7 +29,7 @@
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/home_screen.xml" value="0.2264151024877837" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/item_home_type.xml" value="0.2988679352838745" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/login_screen.xml" value="0.2988679352838745" />
-        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/main_screen.xml" value="0.4528302049755674" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/main_screen.xml" value="0.2988679352838745" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/market_item.xml" value="0.19924529018924966" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/market_item_shimmer.xml" value="0.2264151024877837" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/preium_screen.xml" value="0.24140625" />
