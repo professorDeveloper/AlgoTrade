@@ -42,27 +42,21 @@ class LanguageDialogSheet : BottomSheetDialogFragment() {
 
                         }
                     }
-                    topRadio2.clearCheck()
                 }
             }
             topRadio2.setOnCheckedChangeListener { group, checkedId ->
                 if (checkedId != -1) {
-                    topRadio1.clearCheck()
                     when (checkedId) {
                         R.id.russianBtn -> {
                             val radioButton = binding.root.findViewById<RadioButton>(R.id.russianBtn)
-                            val unSelectedBinding = binding.root.findViewById<RadioButton>(R.id.indianBtn)
                             radioButton.isChecked = true
-                            unSelectedBinding.isChecked = false
                             topRadio1.clearCheck()
 
 
                         }
                         R.id.indianBtn -> {
                             val radioButton = binding.root.findViewById<RadioButton>(R.id.indianBtn)
-                            val unSelectedBinding = binding.root.findViewById<RadioButton>(R.id.englishBtn)
                             radioButton.isChecked = true
-                            unSelectedBinding.isChecked = false
                             topRadio1.clearCheck()
 
                         }
