@@ -5,6 +5,7 @@ import com.azamovhudstc.tradingapp.base.BaseFragment
 import com.azamovhudstc.tradingapp.databinding.ProfileScreenBinding
 import com.azamovhudstc.tradingapp.local.LocalHome
 import com.azamovhudstc.tradingapp.ui.screen.profile.adapter.ProfileAdapter
+import com.azamovhudstc.tradingapp.ui.screen.profile.sheet.ChooseLocationDialogSheet
 import com.azamovhudstc.tradingapp.ui.screen.profile.sheet.LanguageDialogSheet
 
 
@@ -18,6 +19,7 @@ class ProfileScreen : BaseFragment<ProfileScreenBinding>(ProfileScreenBinding::i
             profileAdapter.setItemClickListener {
                 when (it.itemTitle) {
                     "Pul o’tkazish manzili" -> {
+                        ChooseLocationDialogSheet().show(parentFragmentManager, "dialog")
 
                     }
 

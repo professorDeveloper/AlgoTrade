@@ -4,7 +4,7 @@
     android:layout_width="120dp"
     android:layout_height="170dp"
     android:layout_marginHorizontal="4dp"
-    app:cardBackgroundColor="@color/basic_color"
+    app:cardBackgroundColor="#DEE2E4"
     app:cardCornerRadius="16dp"
     app:cardElevation="0dp">
 
@@ -15,35 +15,33 @@
         android:orientation="vertical">
 
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/companyLogo"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
+            app:tint="#FFFFFF"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/bgicons"
-            android:src="@drawable/bnb" />
+            app:srcCompat="@drawable/nvidia" />
 
         <TextView
             android:id="@+id/companyName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="NNVO"
-            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Meta"
+            android:textColor="#FFFFFF"
             android:textFontWeight="600"
-            android:textSize="14sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/companyBalance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/montserrat_semi_bold"
             android:text="$ 213.89"
-            android:textColor="@color/white"
+            android:textColor="#FFFFFF"
             android:textFontWeight="660"
             android:textSize="16sp" />
 
@@ -51,7 +49,6 @@
         <TextView
             android:id="@+id/companyStatus"
             android:layout_width="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:fontFamily="@font/montserrat_medium"

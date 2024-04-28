@@ -113,44 +113,6 @@ fun ImageView.loadImage(file: FileUrl?, size: Int = 0) {
     }
 }
 
-var loaded: Boolean = false
-var loadedFav: Boolean = false
-fun openLinkInBrowser(link: String?, activity: Activity) {
-    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(link))
-    activity.startActivity(intent)
-}
-
-object Refresh {
-    fun all() {
-        for (i in activity) {
-            activity[i.key]!!.postValue(true)
-        }
-    }
-
-    fun all2() {
-        for (i in activity2) {
-            activity2[i.key]!!.postValue(true)
-        }
-    }
-
-    val activity = mutableMapOf<Int, MutableLiveData<Boolean>>()
-    val activity2 = mutableMapOf<Int, MutableLiveData<Boolean>>()
-
-
-}
-
-
-lateinit var isToolbarDisabledGoListener: (Boolean) -> Unit
-
-fun disableToolbar(listener: (Boolean) -> Unit) {
-    isToolbarDisabledGoListener = listener
-}
-
-lateinit var changeToolbarColorListener: (Boolean) -> Unit
-
-fun changeToolbarColor(listener: (Boolean) -> Unit) {
-    changeToolbarColorListener = listener
-}
 
 data class FileUrl(
     val url: String,
@@ -169,17 +131,6 @@ data class Lazier<T>(
     val name: String
 ) {
     val get = lazy { lClass.call() }
-}
-
-fun <T> lazyList(vararg objects: Pair<String, KFunction<T>>): List<Lazier<T>> {
-    return objects.map {
-        Lazier(it.second, it.first)
-    }
-}
-
-fun <T> T.printIt(pre: String = ""): T {
-    println("$pre$this")
-    return this
 }
 
 
@@ -262,15 +213,3 @@ fun setSlideUp() = AnimationSet(false).apply {
     addAnimation(animation)
 }
 
-fun loadTvFilters() :ArrayList<Pair<String,Int>>{
-    val filterlist=ArrayList<Pair<String,Int>>()
-    filterlist.add(Pair("Barcha",1))
-    filterlist.add(Pair("Uzbek",25))
-    filterlist.add(Pair("Bolalar",20))
-    filterlist.add(Pair("O`yin-Kulgi",21))
-    filterlist.add(Pair("Yangiliklar",22))
-    filterlist.add(Pair("Kino",23))
-    filterlist.add(Pair("Sport",24))
-    filterlist.add(Pair("Hayvonot",26))
-    return filterlist;
-}

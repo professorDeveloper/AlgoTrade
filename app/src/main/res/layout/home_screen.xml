@@ -274,6 +274,7 @@
                                 app:tint="@color/basic_color_500" />
                         </LinearLayout>
 
+
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/trendRv"
                             android:layout_width="match_parent"
@@ -281,22 +282,40 @@
                             android:layout_marginTop="12dp"
                             android:orientation="horizontal"
                             android:paddingStart="10dp"
-                            android:visibility="visible"
                             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView4"
                             tools:listitem="@layout/trend_item" />
+                        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                            android:id="@+id/shimmerTrendRv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal"
+                            android:paddingStart="10dp"
+                            app:shimmer_demo_angle="20"
+                            app:shimmer_demo_duration="3000"
+                            app:shimmer_demo_layout="@layout/tremd_item_shimmer"
+                            app:shimmer_demo_child_count="10"
+                            android:visibility="visible"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView4"
+                            app:shimmer_demo_layout_manager_type="linear_horizontal"
+                            tools:listitem="@layout/tremd_item_shimmer" />
+
 
                         <TextView
                             android:id="@+id/textView5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:fontFamily="@font/montserrat_bold"
                             android:text="Bozor"
                             android:textFontWeight="600"
-                            android:layout_marginBottom="10dp"
                             android:textSize="18sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="@+id/textView4"

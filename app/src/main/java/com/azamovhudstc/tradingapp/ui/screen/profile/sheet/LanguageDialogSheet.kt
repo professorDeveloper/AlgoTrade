@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RadioButton
-import com.azamovhudstc.tradingapp.R
 import com.azamovhudstc.tradingapp.databinding.ChangeLanguageBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
@@ -28,42 +26,37 @@ class LanguageDialogSheet : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-            topRadio1.setOnCheckedChangeListener { group, checkedId ->
-                if (checkedId != -1) {
-                    when (checkedId) {
-                        R.id.uzbekBtn -> {
-                            val radioButton = binding.root.findViewById<RadioButton>(R.id.uzbekBtn)
-                            radioButton.isChecked = true
-                        }
-                        R.id.englishBtn -> {
-                            val radioButton =
-                                binding.root.findViewById<RadioButton>(R.id.englishBtn)
-                            radioButton.isChecked = true
-
-                        }
-                    }
+            uzbekBtn.setOnCheckedChangeListener { buttonView, isChecked ->
+                if (isChecked) {
+                    englishBtn.isChecked = false
+                    russianBtn.isChecked = false
+                    indianBtn.isChecked = false
                 }
             }
-            topRadio2.setOnCheckedChangeListener { group, checkedId ->
-                if (checkedId != -1) {
-                    when (checkedId) {
-                        R.id.russianBtn -> {
-                            val radioButton = binding.root.findViewById<RadioButton>(R.id.russianBtn)
-                            radioButton.isChecked = true
-                            topRadio1.clearCheck()
+            englishBtn.setOnCheckedChangeListener { buttonView, isChecked ->
+                if (isChecked) {
+                    uzbekBtn.isChecked = false
+                    russianBtn.isChecked = false
+                    indianBtn.isChecked = false
+                }
+            }
+            russianBtn.setOnCheckedChangeListener { buttonView, isChecked ->
+                if (isChecked) {
 
-
-                        }
-                        R.id.indianBtn -> {
-                            val radioButton = binding.root.findViewById<RadioButton>(R.id.indianBtn)
-                            radioButton.isChecked = true
-                            topRadio1.clearCheck()
-
-                        }
-                    }
+                    englishBtn.isChecked = false
+                    uzbekBtn.isChecked = false
+                    indianBtn.isChecked = false
                 }
             }
 
+            indianBtn.setOnCheckedChangeListener { buttonView, isChecked ->
+                if (isChecked) {
+
+                    englishBtn.isChecked = false
+                    russianBtn.isChecked = false
+                    uzbekBtn.isChecked = false
+                }
+            }
         }
     }
 

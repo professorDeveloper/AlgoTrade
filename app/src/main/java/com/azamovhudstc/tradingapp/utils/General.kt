@@ -89,7 +89,7 @@ suspend fun View.pop() {
 }
 
 fun View.hide() {
-    visibility = View.GONE
+    visibility = View.INVISIBLE
 }
 
 fun View.show() {

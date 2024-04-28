@@ -2,6 +2,7 @@ package com.azamovhudstc.tradingapp.di
 
 import android.content.Context
 import com.azamovhudstc.tradingapp.data.remote.api.MarketApi
+import com.azamovhudstc.tradingapp.data.remote.api.StockApi
 import com.chuckerteam.chucker.api.ChuckerInterceptor
 import dagger.Module
 import dagger.Provides
@@ -26,7 +27,14 @@ object NetworkModule {
         .build()
 
 
-    @[Provides Singleton ]
+    @[Provides Singleton Named("stock")]
+    fun getMakeTradingViewRetrofit2(client: OkHttpClient): Retrofit = Retrofit.Builder()
+        .baseUrl("https://stockanalysis.com/")
+        .client(client)
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+
+    @[Provides Singleton Named("coinMarket")]
     fun getMarketRetrofit2(client: OkHttpClient): Retrofit = Retrofit.Builder()
         .baseUrl("https://pro-api.coinmarketcap.com/")
         .client(client)
@@ -34,8 +42,12 @@ object NetworkModule {
         .build()
 
     @Provides
-    fun getMarketApi( retrofit: Retrofit): MarketApi =
+    fun getMarketApi(@Named("coinMarket") retrofit: Retrofit): MarketApi =
         retrofit.create(MarketApi::class.java)
+
+    @Provides
+    fun getTradingViewApi(@Named("stock") retrofit: Retrofit): StockApi =
+        retrofit.create(StockApi::class.java)
 
 
 }

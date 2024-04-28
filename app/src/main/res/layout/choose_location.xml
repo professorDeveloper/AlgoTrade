@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="197dp"
+    android:orientation="vertical"
+    android:layout_height="220dp"
     android:layout_margin="10dp"
     android:background="@drawable/bg_connection">
-
+    <androidx.cardview.widget.CardView
+        android:layout_width="32dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        app:cardBackgroundColor="@color/nav_tab"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp" />
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -55,11 +63,16 @@
             android:id="@+id/saveBtn"
             android:layout_width="200dp"
             android:layout_height="48dp"
+            android:layout_marginTop="20dp"
             android:insetLeft="0dp"
+            android:layout_marginBottom="30dp"
             android:insetTop="0dp"
             android:insetRight="0dp"
             android:insetBottom="0dp"
             android:text="saqlash"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            app:backgroundTint="@color/basic_color"
             app:cornerRadius="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/addLocationTxt"
@@ -84,4 +97,4 @@
             app:strokeColor="@color/library_back_color_88" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</FrameLayout>
+</LinearLayout>

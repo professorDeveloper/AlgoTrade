@@ -12,13 +12,14 @@ import androidx.fragment.app.viewModels
 import com.azamovhudstc.tradingapp.R
 import com.azamovhudstc.tradingapp.base.BaseFragment
 import com.azamovhudstc.tradingapp.data.remote.response.Data
+import com.azamovhudstc.tradingapp.data.remote.response.stock.DataX
 import com.azamovhudstc.tradingapp.databinding.HomeScreenBinding
 import com.azamovhudstc.tradingapp.local.LocalHome
 import com.azamovhudstc.tradingapp.ui.screen.home.adapter.DiveAdapter
 import com.azamovhudstc.tradingapp.ui.screen.home.adapter.MarketAdapter
 import com.azamovhudstc.tradingapp.ui.screen.home.adapter.TrendAdapter
 import com.azamovhudstc.tradingapp.utils.*
-import com.azamovhudstc.tradingapp.viewmodel.impl.MarketViewModelImpl
+import com.azamovhudstc.tradingapp.viewmodel.impl.HomeScreenViewModelImpl
 import com.google.android.material.appbar.AppBarLayout
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -33,7 +34,7 @@ class HomeScreen : BaseFragment<HomeScreenBinding>(HomeScreenBinding::inflate),
     private val percent = 70
     private var screenWidth = 0f
     private var mMaxScrollSize = 0
-    private val model by viewModels<MarketViewModelImpl>()
+    private val model by viewModels<HomeScreenViewModelImpl>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,9 +60,37 @@ class HomeScreen : BaseFragment<HomeScreenBinding>(HomeScreenBinding::inflate),
                     binding.marketRv.show()
                     binding.shimmerRecyclerView.gone()
                     binding.shimmerRecyclerView.hideShimmerAdapter()
-                    binding.marketRv.layoutAnimation = LayoutAnimationController(setSlideIn(), 0.25f)
+                    binding.marketRv.layoutAnimation =
+                        LayoutAnimationController(setSlideIn(), 0.25f)
                     binding.marketRv.adapter = marketAdapter
                     marketAdapter.submitList(it.data.data as ArrayList<Data>)
+                }
+            }
+        }
+        model.stockLiveData.observe(this) {
+            when (it) {
+                is Resource.Error -> {
+                    binding.shimmerTrendRv.hideShimmerAdapter()
+
+                    binding.textView5.hide()
+                    binding.trendRv.show()
+                    binding.shimmerTrendRv.hide()
+                    snackString(it.throwable.message)
+
+                }
+                Resource.Loading -> {
+                    binding.trendRv.hide()
+                    binding.textView5.hide()
+                    binding.shimmerTrendRv.show()
+                    binding.shimmerTrendRv.showShimmerAdapter()
+                }
+                is Resource.Success -> {
+                    binding.textView5.show()
+                    binding.shimmerTrendRv.hideShimmerAdapter()
+                    binding.trendRv.show()
+                    binding.shimmerTrendRv.hide()
+                    trendAdapter.submitList(it.data.data.data as ArrayList<DataX>)
+
                 }
             }
         }
@@ -71,6 +100,7 @@ class HomeScreen : BaseFragment<HomeScreenBinding>(HomeScreenBinding::inflate),
         screenWidth = resources.displayMetrics.widthPixels.toFloat()
         binding.apply {
             model.loadMarketData()
+            model.getStocks()
             binding.partRv.adapter = adapter
             binding.profilePic.slideUp(1200, 0)
             binding.greetingText.slideUp(1200, 0)
@@ -82,26 +112,8 @@ class HomeScreen : BaseFragment<HomeScreenBinding>(HomeScreenBinding::inflate),
             binding.trendRv.layoutAnimation = LayoutAnimationController(setSlideIn(), 0.25f)
             adapter.submitList(LocalHome.localDriveItem())
             binding.trendRv.adapter = trendAdapter
-            trendAdapter.submitList(LocalHome.loadTrendList())
             binding.appBarLayout.addOnOffsetChangedListener(this@HomeScreen)
-//            binding.root.setOnRefreshListener {
-//                lifecycleScope.launch {
-//                    delay(2000)
-//                    binding.partRv.adapter = adapter
-//                    binding.profilePic.slideUp(1200, 0)
-//                    binding.greetingText.slideUp(1200, 0)
-//                    binding.nameTxt.slideUp(1200, 0)
-//                    binding.notificationCard.slideUp(700, 0)
-//                    binding.textView3.slideStart(700, 0)
-//                    binding.cardView.slideStart(700,0)
-//                    binding.partRv.layoutAnimation = LayoutAnimationController(setSlideIn(), 0.25f)
-//                    binding.trendRv.layoutAnimation = LayoutAnimationController(setSlideIn(), 0.25f)
-//                    adapter.submitList(LocalHome.localDriveItem())
-//                    binding.trendRv.adapter = trendAdapter
-//                    trendAdapter.submitList(LocalHome.loadTrendList())
-//                    binding.root.isRefreshing = false
-//                }
-//            }
+
         }
     }
 
