@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Вход</string>
+    <string name="password">Пароль</string>
+    <string name="home">Дом</string>
+    <string name="browse">Просматривать</string>
+    <string name="coin">Монета</string>
+    <string name="wallet">Кошелек</string>
+    <string name="profile">Профиль</string>
+
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="accept_privacy">Я согласен со всеми условиями</string>
+    <string name="dont_have_account">У вас еще нет учетной записи?</string>
+
+</resources>

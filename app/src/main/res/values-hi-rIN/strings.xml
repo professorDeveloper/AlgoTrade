@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">घर</string>
+    <string name="browse">ब्राउज़</string>
+    <string name="coin">सिक्का</string>
+    <string name="wallet">बटुआ</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="password">पासवर्ड</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="accept_privacy">मैं सभी शर्तों से सहमत हूं</string>
+    <string name="dont_have_account">अब तक कोई खाता नहीं है?</string>
+
+</resources>

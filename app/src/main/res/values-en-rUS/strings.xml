@@ -1,15 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">TradingApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="home">Home</string>
-    <string name="login">Login</string>
     <string name="browse">Browse</string>
     <string name="coin">Coin</string>
     <string name="wallet">Wallet</string>
-    <string name="dont_have_account">Don`t have an account yet?</string>
     <string name="profile">Profile</string>
+    <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="forgot_password">Forgot Password ?</string>
     <string name="accept_privacy">I agree to all terms</string>
+    <string name="dont_have_account">Don`t have an account yet?</string>
+
 </resources>

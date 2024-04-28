@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="home">Uy</string>
+    <string name="browse">Browse</string>
+    <string name="coin">Tanga</string>
+    <string name="wallet">Hamyon</string>
+    <string name="profile">Profil</string>
+    <string name="login">Kirish</string>
+    <string name="password">parol</string>
+    <string name="forgot_password">Parolni unutdingizmi ?</string>
+    <string name="accept_privacy">Barcha shartlarga roziman</string>
+      <string name="dont_have_account">Hali beri akauntingiz yo’qmi</string>
+
+</resources>

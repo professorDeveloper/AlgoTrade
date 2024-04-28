@@ -30,7 +30,7 @@
             android:layout_marginStart="4dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/montserrat_bold"
-            android:text="Kirish"
+            android:text="@string/login"
             android:textSize="22sp"
             app:layout_constraintStart_toStartOf="@+id/loginImg"
             app:layout_constraintTop_toBottomOf="@+id/loginImg" />
@@ -47,7 +47,7 @@
             android:drawablePadding="7dp"
             android:fontFamily="@font/montserrat_medium"
             android:gravity="start|center_vertical"
-            android:hint="login"
+            android:hint="@string/login"
             android:inputType="textPersonName"
 
             android:paddingStart="14dp"
@@ -72,7 +72,7 @@
             android:drawablePadding="7dp"
             android:fontFamily="@font/montserrat_medium"
             android:gravity="start|center_vertical"
-            android:hint="parol"
+            android:hint="@string/password"
             android:inputType="textPersonName"
 
             android:paddingStart="14dp"
@@ -94,7 +94,7 @@
             android:background="?selectableItemBackgroundBorderless"
             android:fontFamily="@font/montserrat_medium"
             android:includeFontPadding="false"
-            android:text="Parolni unutdingizmi?"
+            android:text="@string/forgot_password"
             android:textColor="@color/basic_color"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@+id/passwordTxt"
@@ -124,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/montserrat_bold"
-                android:text="Barcha shartlarga roziman"
+                android:text="@string/accept_privacy"
                 android:textColor="#4B4B4B"
                 android:textSize="13sp" />
         </LinearLayout>
@@ -140,7 +140,7 @@
             android:insetTop="0dp"
             android:insetRight="0dp"
             android:insetBottom="0dp"
-            android:text="Kirish"
+            android:text="@string/login"
             android:textSize="18sp"
 
             app:cornerRadius="8dp"
@@ -165,7 +165,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="Hali beri akauntingiz yo’qmi"
+                android:text="@string/dont_have_account"
                 android:textColor="@color/grey_20"
                 android:textSize="13sp" />
 
