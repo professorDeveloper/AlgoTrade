@@ -65,7 +65,7 @@
                             android:layout_marginStart="6dp"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/montserrat_medium"
-                            android:text="Salom 👋"
+                            android:text="@string/hello"
                             android:textSize="14sp"
                             app:layout_constraintStart_toEndOf="@+id/profilePic"
                             app:layout_constraintTop_toTopOf="@+id/profilePic" />
@@ -133,7 +133,7 @@
 
                                     android:layout_marginTop="15dp"
                                     android:fontFamily="@font/montserrat_medium"
-                                    android:text="Hozirgi Hisobingiz:"
+                                    android:text="@string/current_balance"
                                     android:textFontWeight="400"
                                     android:textSize="14sp"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -189,7 +189,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="30dp"
                             android:fontFamily="@font/montserrat_bold"
-                            android:text="Bo`limlar"
+                            android:text="@string/browses"
                             android:textFontWeight="600"
                             android:textSize="18sp"
                             app:layout_constraintStart_toStartOf="@+id/cardView"
@@ -236,7 +236,7 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="20dp"
                             android:fontFamily="@font/montserrat_bold"
-                            android:text="Trendlar"
+                            android:text="@string/trendlar"
                             android:textFontWeight="600"
                             android:textSize="18sp"
                             app:layout_constraintStart_toStartOf="parent"
@@ -260,7 +260,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:fontFamily="@font/montserrat_medium"
-                                android:text="Barchasini Ko`rish"
+                                android:text="@string/see_all"
                                 android:textColor="@color/basic_color_500"
                                 android:textSize="14sp" />
 
@@ -314,7 +314,7 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="10dp"
                             android:fontFamily="@font/montserrat_bold"
-                            android:text="Bozor"
+                            android:text="@string/store"
                             android:textFontWeight="600"
                             android:textSize="18sp"
                             app:layout_constraintBottom_toBottomOf="parent"

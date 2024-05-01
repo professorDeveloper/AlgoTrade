@@ -44,7 +44,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="26dp"
                     android:fontFamily="@font/inter_bold"
-                    android:text="Coin"
+                    android:text="@string/coin"
                     android:textColor="@color/basic_color_500"
                     android:textSize="22sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +68,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_medium"
-                        android:text="Premium"
+                        android:text="@string/premium"
                         android:textColor="#0070F0"
                         android:textSize="15sp" />
 
@@ -78,7 +78,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:fontFamily="@font/montserrat_medium"
-                        android:text="Standart"
+                        android:text="@string/standart"
                         android:textColor="#4B4B4B"
                         android:textSize="15sp" />
                 </LinearLayout>

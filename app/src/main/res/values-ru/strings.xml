@@ -11,5 +11,23 @@
     <string name="forgot_password">Забыли пароль?</string>
     <string name="accept_privacy">Я согласен со всеми условиями</string>
     <string name="dont_have_account">У вас еще нет учетной записи?</string>
-
+    <string name="language_info">Пожалуйста, выберите предпочитаемый язык?</string>
+    <string name="uzbek">Uzbek</string>
+    <string name="english">English</string>
+    <string name="russian">Russian</string>
+    <string name="hind_tili">Indian</string>
+    <string name="save">Сохранять</string>
+    <string name="location_info">Пожалуйста, нажмите «Сохранить» после ввода адреса.</string>
+    <string name="enter_address">Введите адрес</string>
+    <string name="copy">Копировать</string>
+    <string name="premium">Премиум</string>
+    <string name="standart">Cтандарт</string>
+    <string name="deposit">Депозит</string>
+    <string name="hello">Привет 👋</string>
+    <string name="current_balance">Ваш текущий счет:</string>
+    <string name="browses">Разделы</string>
+    <string name="trendlar">Тенденции</string>
+    <string name="see_all">Увидеть все</string>
+    <string name="store">Рынок</string>
+    <string name="your_balance">Sizning hisobingiz</string>
 </resources>

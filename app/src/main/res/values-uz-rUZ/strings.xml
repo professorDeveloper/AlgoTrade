@@ -10,6 +10,26 @@
     <string name="password">parol</string>
     <string name="forgot_password">Parolni unutdingizmi ?</string>
     <string name="accept_privacy">Barcha shartlarga roziman</string>
-      <string name="dont_have_account">Hali beri akauntingiz yo’qmi</string>
+    <string name="dont_have_account">Hali beri akauntingiz yo’qmi</string>
+    <string name="language_info">Iltimos o’zingizga mos tilni tanlang</string>
+    <string name="uzbek">Uzbek</string>
+    <string name="english">English</string>
+    <string name="russian">Russian</string>
+    <string name="hind_tili">Indian</string>
+    <string name="save">Saqlash</string>
+    <string name="location_info">Iltimos manzilni kirishingizda ishonch hosil qilgandan kegin saqlash tugmasini bosing</string>
+    <string name="enter_address">manzilni kiriting</string>
+    <string name="copy">Nusxalash</string>
+    <string name="premium">Premium</string>
+    <string name="standart">Standart</string>
+    <string name="deposit">Deposit</string>
+    <string name="hello">Salom 👋</string>
+    <string name="current_balance">Hozirgi Hisobingiz</string>
+    <string name="browses">Bo`limlar</string>
+    <string name="trendlar">Trendlar</string>
+    <string name="see_all">Barchasini Ko`rish</string>
+    <string name="store">Market</string>
+    <string name="your_balance">Sizning hisobingiz</string>
+
 
 </resources>

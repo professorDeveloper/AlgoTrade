@@ -68,7 +68,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="30dp"
-                                android:text="Sizning hisobingiz"
+                                android:text="@string/your_balance"
                                 android:textColor="#4B4B4B"
                                 android:textSize="13sp"
                                 app:layout_constraintEnd_toEndOf="parent"

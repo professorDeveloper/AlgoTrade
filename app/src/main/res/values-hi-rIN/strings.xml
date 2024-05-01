@@ -10,5 +10,24 @@
     <string name="forgot_password">पासवर्ड भूल गए?</string>
     <string name="accept_privacy">मैं सभी शर्तों से सहमत हूं</string>
     <string name="dont_have_account">अब तक कोई खाता नहीं है?</string>
+        <string name="language_info">कृपया अपनी पसंदीदा भाषा चुनें</string>
+    <string name="uzbek">Uzbek</string>
+    <string name="english">English</string>
+    <string name="russian">Russian</string>
+    <string name="hind_tili">Indian</string>
+    <string name="save">बचाना</string>
+    <string name="location_info">कृपया पता दर्ज करने के बाद सेव पर क्लिक करें</string>
+    <string name="enter_address">पता दर्ज करें</string>
+    <string name="copy">प्रतिलिपि</string>
+    <string name="premium">अधिमूल्य</string>
+    <string name="standart">स्टैंडआर्ट</string>
+    <string name="deposit">जमा</string>
+    <string name="hello">नमस्ते 👋</string>
+    <string name="current_balance">आपकी वर्तमान राशि:</string>
+    <string name="browses">बो`लिमलर</string>
+    <string name="trendlar">प्रवृत्तियों</string>
+    <string name="see_all">सभी देखें</string>
+    <string name="store">बाज़ार</string>
+    <string name="your_balance">Sizning hisobingiz</string>
 
 </resources>

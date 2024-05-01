@@ -31,7 +31,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/montserrat_bold"
-            android:text="Iltimos o’zingizga mos tilni tanlang"
+            android:text="@string/language_info"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -63,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:scaleX="0.8"
                     android:scaleY="0.8"
-                    android:text="o’zbek tili"
+                    android:text="@string/uzbek"
                     android:textColor="@color/textColor"
                     android:textSize="18sp" />
 
@@ -75,7 +75,7 @@
                     android:layout_marginStart="40dp"
                     android:scaleX="0.8"
                     android:scaleY="0.8"
-                    android:text="ingiliz-tili"
+                    android:text="@string/english"
                     android:textColor="@color/textColor"
                     android:textSize="18sp" />
 
@@ -98,7 +98,7 @@
                     android:layout_height="wrap_content"
                     android:scaleX="0.8"
                     android:scaleY="0.8"
-                    android:text="rus tili"
+                    android:text="@string/russian"
                     android:textColor="@color/textColor"
                     android:textSize="18sp" />
 
@@ -107,10 +107,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end|bottom"
-                    android:layout_marginStart="69dp"
+                    android:layout_marginStart="20dp"
                     android:scaleX="0.8"
                     android:scaleY="0.8"
-                    android:text="hind-tili"
+                    android:text="@string/hind_tili"
                     android:textColor="@color/textColor"
                     android:textSize="18sp" />
 
@@ -129,7 +129,7 @@
             android:insetTop="0dp"
             android:insetRight="0dp"
             android:insetBottom="0dp"
-            android:text="saqlash"
+            android:text="@string/save"
             android:textColor="@color/white"
             app:backgroundTint="@color/basic_color"
             app:cornerRadius="8dp"
