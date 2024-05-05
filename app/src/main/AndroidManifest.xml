@@ -18,6 +18,7 @@
         android:theme="@style/Theme.TradingApp"
         tools:targetApi="31">
         <activity
+            android:theme="@style/Theme.MyTask.Starting"
             android:name=".ui.activity.MainActivity"
             android:exported="true">
             <intent-filter>

@@ -20,4 +20,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "TradingApp"
 include ':app'
-include ':auth_firebase'
+include ':firebase_data'

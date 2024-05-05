@@ -2,7 +2,7 @@ package com.azamovhudstc.tradingapp.ui.screen
 
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.azamovhudstc.auth_firebase.request.LoginRequest
+import com.azamovhudstc.firebase_data.request.LoginRequest
 import com.azamovhudstc.tradingapp.R
 import com.azamovhudstc.tradingapp.base.BaseFragment
 import com.azamovhudstc.tradingapp.databinding.LoginScreenBinding
@@ -49,12 +49,12 @@ class LoginScreen : BaseFragment<LoginScreenBinding>(LoginScreenBinding::inflate
                     binding.materialButton.isEnabled = false
                 }
                 is Resource.Success -> {
+                    binding.materialButton.isEnabled = true
                     findNavController().navigate(
                         R.id.mainScreen,
                         null,
                         animationTransactionClearStack(R.id.loginScreen).build()
                     )
-                    binding.materialButton.isEnabled = true
                     toast("Login successful")
                 }
             }

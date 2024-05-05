@@ -1,8 +1,8 @@
 package com.azamovhudstc.tradingapp.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import com.azamovhudstc.auth_firebase.request.LoginRequest
-import com.azamovhudstc.auth_firebase.request.RegisterRequest
+import com.azamovhudstc.firebase_data.request.LoginRequest
+import com.azamovhudstc.firebase_data.request.RegisterRequest
 import com.azamovhudstc.tradingapp.utils.Resource
 
 interface AuthViewModel {

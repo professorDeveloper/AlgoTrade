@@ -48,6 +48,28 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/shimmerProfilePic"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="60dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shimmer_base_color="@color/basic_color_400"
+                            app:shimmer_shape="radial">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/fakePicture"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/img"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:id="@+id/profilePic"
                             android:layout_width="50dp"
@@ -55,8 +77,30 @@
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="60dp"
                             android:src="@drawable/profile_pic"
+                            android:visibility="invisible"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/greetingTextShimmer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="4dp"
+
+                            app:layout_constraintStart_toEndOf="@+id/profilePic"
+                            app:layout_constraintTop_toTopOf="@+id/profilePic">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Fetching Data"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toEndOf="@+id/profilePic"
+                                app:layout_constraintTop_toTopOf="@+id/profilePic" />
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
 
                         <TextView
                             android:id="@+id/greetingText"
@@ -65,8 +109,9 @@
                             android:layout_marginStart="6dp"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/montserrat_medium"
-                            android:text="@string/hello"
+                            android:text=""
                             android:textSize="14sp"
+                            android:visibility="invisible"
                             app:layout_constraintStart_toEndOf="@+id/profilePic"
                             app:layout_constraintTop_toTopOf="@+id/profilePic" />
 
@@ -76,12 +121,31 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/montserrat_semi_bold"
                             android:includeFontPadding="false"
-                            android:text="Asad G’aybullaev"
+                            android:text=""
                             android:textColor="@color/darkest_Black"
                             android:textSize="18sp"
+                            android:visibility="invisible"
                             app:layout_constraintBottom_toBottomOf="@+id/profilePic"
                             app:layout_constraintStart_toStartOf="@+id/greetingText"
                             app:layout_constraintTop_toBottomOf="@+id/greetingText" />
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/nameTxtShimmer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="@+id/profilePic"
+                            app:layout_constraintStart_toStartOf="@+id/greetingText"
+                            app:layout_constraintTop_toBottomOf="@+id/greetingText" >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_semi_bold"
+                                android:includeFontPadding="false"
+                                android:text="Fetching Data"
+                                android:textColor="@color/darkest_Black"
+                                android:textSize="18sp" />
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
 
 
                         <androidx.cardview.widget.CardView
@@ -287,6 +351,7 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView4"
                             tools:listitem="@layout/trend_item" />
+
                         <com.cooltechworks.views.shimmer.ShimmerRecyclerView
                             android:id="@+id/shimmerTrendRv"
                             android:layout_width="match_parent"
@@ -294,15 +359,15 @@
                             android:layout_marginTop="12dp"
                             android:orientation="horizontal"
                             android:paddingStart="10dp"
-                            app:shimmer_demo_angle="20"
-                            app:shimmer_demo_duration="3000"
-                            app:shimmer_demo_layout="@layout/tremd_item_shimmer"
-                            app:shimmer_demo_child_count="10"
                             android:visibility="visible"
                             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView4"
+                            app:shimmer_demo_angle="20"
+                            app:shimmer_demo_child_count="10"
+                            app:shimmer_demo_duration="3000"
+                            app:shimmer_demo_layout="@layout/tremd_item_shimmer"
                             app:shimmer_demo_layout_manager_type="linear_horizontal"
                             tools:listitem="@layout/tremd_item_shimmer" />
 

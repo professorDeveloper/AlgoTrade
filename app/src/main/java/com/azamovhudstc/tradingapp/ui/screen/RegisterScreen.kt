@@ -4,7 +4,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.azamovhudstc.auth_firebase.request.RegisterRequest
+import com.azamovhudstc.firebase_data.request.RegisterRequest
 import com.azamovhudstc.tradingapp.R
 import com.azamovhudstc.tradingapp.base.BaseFragment
 import com.azamovhudstc.tradingapp.databinding.RegisterScreenBinding

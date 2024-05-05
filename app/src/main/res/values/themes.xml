@@ -42,6 +42,12 @@
     <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
         <item name="android:color">@color/white</item>
     </style>
+    <style name="Theme.MyTask.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#0F3D3E</item>
+        <item name="windowSplashScreenAnimationDuration">1200</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.TradingApp</item>
+    </style>
 
     <style name="DialogTheme" parent="Theme.TradingApp">
         <item name="android:layout_width">wrap_content</item>

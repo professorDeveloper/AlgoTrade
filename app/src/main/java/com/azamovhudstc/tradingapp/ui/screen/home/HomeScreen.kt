@@ -20,6 +20,7 @@ import com.azamovhudstc.tradingapp.ui.screen.home.adapter.MarketAdapter
 import com.azamovhudstc.tradingapp.ui.screen.home.adapter.TrendAdapter
 import com.azamovhudstc.tradingapp.utils.*
 import com.azamovhudstc.tradingapp.viewmodel.impl.HomeScreenViewModelImpl
+import com.bumptech.glide.Glide
 import com.google.android.material.appbar.AppBarLayout
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -67,6 +68,38 @@ class HomeScreen : BaseFragment<HomeScreenBinding>(HomeScreenBinding::inflate),
                 }
             }
         }
+        model.profileLiveData.observe(this) {
+            when (it) {
+                is Resource.Error -> {
+                    toast(it.throwable.message)
+
+                }
+                Resource.Loading -> {
+                    binding.profilePic.hide()
+                    binding.greetingText.hide()
+                    binding.nameTxt.hide()
+                    binding.greetingTextShimmer.show()
+                    binding.nameTxtShimmer.show()
+                    binding.fakePicture.show()
+                }
+                is Resource.Success -> {
+                    logMessage(
+                        it.data
+                            .toString()
+                    )
+                    binding.nameTxt.show()
+                    binding.nameTxt.text = it.data.name
+                    binding.greetingText.show()
+                    binding.greetingTextShimmer.hide()
+                    binding.nameTxtShimmer.hide()
+                    binding.fakePicture.hide()
+                    binding.profilePic.show()
+                    binding.greetingText.text = requireActivity().getString(R.string.hello)
+                    Glide.with(requireContext()).load(it.data.profilePic).into(binding.profilePic)
+
+                }
+            }
+        }
         model.stockLiveData.observe(this) {
             when (it) {
                 is Resource.Error -> {
@@ -101,6 +134,7 @@ class HomeScreen : BaseFragment<HomeScreenBinding>(HomeScreenBinding::inflate),
         binding.apply {
             model.loadMarketData()
             model.getStocks()
+            model.loadProfileData()
             binding.partRv.adapter = adapter
             binding.profilePic.slideUp(1200, 0)
             binding.greetingText.slideUp(1200, 0)
