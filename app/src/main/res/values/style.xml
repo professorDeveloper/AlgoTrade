@@ -112,9 +112,7 @@
         <item name="android:background">@drawable/round_corner</item>
     </style>
 
-    <string name="MySnackBarText" parent="Widget.MaterialComponents.Snackbar.TextView">
-        <item name="android:textColor">@color/bg_opp</item>
-    </string>
+
 
     <style name="roundedImageViewCircle" parent="">
         <item name="cornerFamily">rounded</item>

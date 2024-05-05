@@ -3,15 +3,16 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.azamovhudstc.tradingapp"
-        minSdk 23
-        targetSdk 32
+        minSdk 24
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -119,5 +120,14 @@ dependencies {
      **/
     implementation 'com.zeugmasolutions.localehelper:locale-helper-android:1.5.1'
     implementation 'com.github.prongbang:localization:2.1.2'
+
+    //Multi Module
+    implementation project(path: ':auth_firebase')
+
+
+    implementation 'com.github.hellosagar:ProgressButton:0.35'
+    //
+
+
 
 }

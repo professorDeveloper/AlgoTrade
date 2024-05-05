@@ -22,6 +22,8 @@
     <string name="copy">Копировать</string>
     <string name="premium">Премиум</string>
     <string name="standart">Cтандарт</string>
+    <string name="app_name" >TradingApp</string>
+    <string name="hello_blank_fragment" >Hello blank fragment</string>
     <string name="deposit">Депозит</string>
     <string name="hello">Привет 👋</string>
     <string name="current_balance">Ваш текущий счет:</string>

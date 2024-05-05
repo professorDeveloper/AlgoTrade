@@ -26,6 +26,8 @@
     <string name="hello">Salom 👋</string>
     <string name="current_balance">Hozirgi Hisobingiz</string>
     <string name="browses">Bo`limlar</string>
+    <string name="app_name" >TradingApp</string>
+    <string name="hello_blank_fragment" >Hello blank fragment</string>
     <string name="trendlar">Trendlar</string>
     <string name="see_all">Barchasini Ko`rish</string>
     <string name="store">Market</string>

@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name" translatable="false">TradingApp</string>
+    <string name="app_name" >TradingApp</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="hello_blank_fragment" >Hello blank fragment</string>
     <string name="home">Home</string>
     <string name="login">Login</string>
     <string name="browse">Browse</string>
@@ -25,7 +25,7 @@
     <string name="standart">Standart</string>
     <string name="deposit">Deposit</string>
     <string name="hello">Hello 👋</string>
-    <string name="current_balance">Your Current Ammount</string>
+    <string name="current_balance">Your Current Amount</string>
     <string name="browses">Sections</string>
     <string name="trendlar">Trends</string>
     <string name="see_all">See All</string>

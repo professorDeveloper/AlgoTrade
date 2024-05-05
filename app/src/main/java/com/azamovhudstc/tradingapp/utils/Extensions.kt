@@ -36,6 +36,34 @@ fun createLetterAvatar(context: Context, letter: String, size: Int): Drawable {
     return BitmapDrawable(context.resources, bitmap)
 }
 
+private fun isNameValid(name: String): Boolean {
+    // Implement your validation logic for the name
+    // For example, check if the name is not empty
+    return name.isNotEmpty()
+}
+
+fun isEmailValid(email: String): Boolean {
+    // Implement your validation logic for the email
+    // For example, you can use a regular expression to check if the email format is correct
+    val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
+    return email.matches(emailPattern.toRegex())
+}
+
+fun isPasswordValid(password: String): Boolean {
+    // Implement your validation logic for the password
+    // For example, check if the password meets certain criteria like length, contains special characters, etc.
+    return password.length >= 8 // Example: Password should be at least 8 characters long
+}
+
+private fun isPasswordMatch(password: String, reEnteredPassword: String): Boolean {
+    // Check if the re-entered password matches the original password
+    return password == reEnteredPassword
+}
+
+// Function to check if all user data is correct
+fun isUserDataValid(name: String, email: String, password: String, reEnteredPassword: String): Boolean {
+    return isNameValid(name) && isEmailValid(email) && isPasswordValid(password) && isPasswordMatch(password, reEnteredPassword)
+}
 
 // Function to generate a color based on the letter
 private fun generateGradientFromLetter(letter: String, size: Int): Shader {
