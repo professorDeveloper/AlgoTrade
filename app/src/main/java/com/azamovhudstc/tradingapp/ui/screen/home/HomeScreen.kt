@@ -72,7 +72,7 @@ class HomeScreen : BaseFragment<HomeScreenBinding>(HomeScreenBinding::inflate),
             when (it) {
                 is Resource.Error -> {
                     toast(it.throwable.message)
-
+                    logMessage(it.throwable.message)
                 }
                 Resource.Loading -> {
                     binding.profilePic.hide()
@@ -96,7 +96,7 @@ class HomeScreen : BaseFragment<HomeScreenBinding>(HomeScreenBinding::inflate),
                     binding.profilePic.show()
                     binding.greetingText.text = requireActivity().getString(R.string.hello)
                     Glide.with(requireContext()).load(it.data.profilePic).into(binding.profilePic)
-
+                    logMessage(it.data.toString())
                 }
             }
         }

@@ -5,6 +5,7 @@ pluginManagement {
         mavenCentral()
         maven {
             url = uri("https://storage.googleapis.com/r8-releases/raw")
+            maven { url 'https://maven.fpregistry.io/releases' }
             url 'https://jitpack.io' }
         jcenter()  }
 }
@@ -15,9 +16,11 @@ dependencyResolutionManagement {
         mavenCentral()
         maven {
             url = uri("https://storage.googleapis.com/r8-releases/raw")
+            maven { url 'https://maven.fpregistry.io/releases' }
             url 'https://jitpack.io' }
         jcenter() }
 }
 rootProject.name = "TradingApp"
 include ':app'
 include ':firebase_data'
+include ':creditcardviewlib'

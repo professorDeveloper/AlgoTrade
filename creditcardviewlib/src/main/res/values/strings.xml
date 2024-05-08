@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="place_holder_card_holder">CARDHOLDER NAME</string>
+    <string name="place_holder_name_and_surname">NAME SURNAME</string>
+    <string name="place_holder_card_expiry_date">VALID THRU</string>
+    <string name="place_holder_cvv">000</string>
+    <string name="hint_mm_yy">AA/YY</string>
+    <string name="hint_card_number">Card Number</string>
+    <string name="hint_card_holder_name">Cardholder Name</string>
+    <string name="hint_card_expiry_date">Valid Thru</string>
+    <string name="hint_cvv">Secondary Code(CVV)</string>
+    <string name="place_holder_card_number">XXXX XXXX XXXX XXXX</string>
+    <string name="error_invalid_month">Geçersiz Tarih</string>
+    <string name="name_on_card">Name on Card</string>
+    <string name="card_holder_name_sample">Saikou Azamov</string>
+    <string name="next">Next</string>
+    <string name="type_in_your_card_details">"Type in your card details: "</string>
+    <string name="addCard">Add</string>
+    <string name="edit">Edit</string>
+
+</resources>

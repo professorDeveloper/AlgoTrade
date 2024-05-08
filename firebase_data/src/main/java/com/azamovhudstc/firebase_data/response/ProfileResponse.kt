@@ -7,4 +7,5 @@ data class ProfileResponse(
     val lastName: String="",
     val profilePic: String="",
     val deviceId: String="",
+    val balance :Int =0
 )

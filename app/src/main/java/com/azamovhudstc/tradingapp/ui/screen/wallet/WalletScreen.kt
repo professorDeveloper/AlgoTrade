@@ -1,6 +1,8 @@
 package com.azamovhudstc.tradingapp.ui.screen.wallet
 
 import android.animation.ObjectAnimator
+import android.app.Activity
+import android.content.Intent
 import android.content.res.Resources
 import android.os.Bundle
 import android.util.TypedValue
@@ -13,10 +15,12 @@ import androidx.core.content.ContextCompat
 import androidx.core.math.MathUtils
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
+import com.azamovhudstc.creditcardviewlib.AddCreditCardActivity
+import com.azamovhudstc.creditcardviewlib.CreditCardItem
 import com.azamovhudstc.tradingapp.R
 import com.azamovhudstc.tradingapp.databinding.WalletScreenBinding
-import com.azamovhudstc.tradingapp.ui.screen.wallet.adapter.DepositeAdapter
 import com.azamovhudstc.tradingapp.ui.screen.wallet.adapter.PagerAdapter
+import com.azamovhudstc.tradingapp.utils.logMessage
 import com.azamovhudstc.tradingapp.utils.setSlideIn
 import com.azamovhudstc.tradingapp.utils.slideUp
 import com.google.android.material.appbar.AppBarLayout
@@ -26,6 +30,7 @@ class WalletScreen : Fragment(R.layout.wallet_screen), AppBarLayout.OnOffsetChan
     private var isSelected = false
     private val percent = 70
     private var screenWidth = 0f
+    private val REQUEST_CODE = 3
     private var mMaxScrollSize = 0
     private var _binding: WalletScreenBinding? = null
     private val binding get() = _binding!!
@@ -58,6 +63,13 @@ class WalletScreen : Fragment(R.layout.wallet_screen), AppBarLayout.OnOffsetChan
             binding.withDraw.setTextColor(requireActivity().getColor(R.color.textColor))
             binding.walletPager.currentItem = 0
             binding.depositTxt.setTextColor(requireActivity().getColor(R.color.basic_color))
+
+        }
+        binding.buyBtn.setOnClickListener {
+            startActivityForResult(
+                AddCreditCardActivity.newIntent(context = requireActivity()),
+                REQUEST_CODE
+            )
 
         }
         binding.withDraw.setOnClickListener {
@@ -146,4 +158,12 @@ class WalletScreen : Fragment(R.layout.wallet_screen), AppBarLayout.OnOffsetChan
 
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if (requestCode == REQUEST_CODE && resultCode == Activity.RESULT_OK) {
+            val creditCardItem =
+                data?.extras?.getParcelable<CreditCardItem>(AddCreditCardActivity.KEY_CREDIT_CARD)
+            logMessage(creditCardItem.toString())
+        }
+
+    }
 }

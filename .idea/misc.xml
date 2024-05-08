@@ -20,6 +20,7 @@
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/sendicon.xml" value="0.173" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/drawable/shape_corner_16dp.xml" value="0.237" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/activity_main.xml" value="0.321875" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/card_screen.xml" value="0.32083333333333336" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/change_language.xml" value="0.2988679352838745" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/choose_location.xml" value="0.2988679352838745" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/coin_horizontal_item.xml" value="0.21237113402061855" />
@@ -39,9 +40,23 @@
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/standart_screen.xml" value="0.24140625" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/tremd_item_shimmer.xml" value="0.2988679352838745" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/trend_item.xml" value="0.4528302049755674" />
-        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/wallet_screen.xml" value="0.2264151024877837" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/wallet_screen.xml" value="0.4528302049755674" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/layout/withdraw_screen.xml" value="0.230859375" />
         <entry key="..\:/AndroidStudioProjects/TradingApp/app/src/main/res/menu/bottom_navbar_menu.xml" value="0.32083333333333336" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/drawable/credit_card_background.xml" value="0.1865" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2665" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/drawable/input_field_background.xml" value="0.1855" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/drawable/input_field_error_background.xml" value="0.1855" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/drawable/input_view_pointer.xml" value="0.1865" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/drawable/next_input_field_button_background.xml" value="0.1855" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/layout/activity_add_credit_card.xml" value="0.2264151024877837" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/layout/credit_card_view.xml" value="0.240625" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/layout/layout_card_cvv.xml" value="0.2988679352838745" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/layout/layout_card_expiry_date.xml" value="0.2264151024877837" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/layout/layout_card_holder_name.xml" value="0.178125" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/layout/layout_card_number.xml" value="0.2264151024877837" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/layout/layout_credit_card_back.xml" value="0.24140625" />
+        <entry key="..\:/AndroidStudioProjects/TradingApp/creditcardviewlib/src/main/res/layout/layout_credit_card_front.xml" value="0.24140625" />
       </map>
     </option>
   </component>

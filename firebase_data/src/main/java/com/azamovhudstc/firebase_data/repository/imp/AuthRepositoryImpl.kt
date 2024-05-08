@@ -33,7 +33,8 @@ class AuthRepositoryImpl @Inject constructor(
                         "name" to registerRequest.name,
                         "lastName" to registerRequest.lastName,
                         "deviceId" to getDeviceId(),
-                        "profilePic" to "https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg"
+                        "profilePic" to "https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg",
+                        "balance" to registerRequest.balance
                     )
                     usersRef.child(userId).setValue(userData)
                         .addOnCompleteListener { dbTask ->
