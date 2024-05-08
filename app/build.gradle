@@ -131,6 +131,10 @@ dependencies {
     implementation 'androidx.core:core-splashscreen:1.0.0'
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
 
+    implementation('org.checkerframework:checker-qual:3.33.0') {
+        exclude group: 'org.checkerframework.framework', module: 'qual'
+    }
+    implementation files('libs/visaApi.jar')
 
 
 
